@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>太鼓之达人 段位道场理论成绩</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+      margin: 0;
+      padding: 16px;
+      background: #f5f5f5;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+    #loading {
+      text-align: center;
+      padding: 40px;
+      color: #666;
+    }
+    .matrix-wrapper {
+      overflow: auto;
+      max-height: 80vh;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: relative;
+    }
+    table {
+      border-collapse: collapse;
+      min-width: 100%;
+      table-layout: fixed;
+    }
+    th, td {
+      border: 1px solid #e0e0e0;
+      text-align: center;
+      vertical-align: middle;
+    }
+    th {
+      background: #fafafa;
+      font-weight: 600;
+      padding: 8px 4px;
+      font-size: 0.85rem;
+      white-space: nowrap;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    td {
+      padding: 4px;
+      height: 56px;
+      width: 56px;
+      min-width: 56px;
+    }
+    .version-cell {
+      background: #fafafa;
+      font-weight: 600;
+      font-size: 0.85rem;
+      width: 100px;
+      min-width: 100px;
+      position: sticky;
+      left: 0;
+      z-index: 2;
+    }
+    .version-header {
+      position: sticky;
+      left: 0;
+      top: 0;
+      z-index: 11;
+      background: #f0f0f0;
+    }
+    .dani-cell {
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .dani-cell:hover {
+      background: #f0f8ff;
+    }
+    .dani-cell img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+    .dani-cell.missing {
+      background: #f5f5f5;
+    }
+    .dani-cell.selected {
+      outline: 2px solid #2196f3;
+      outline-offset: -2px;
+    }
+    .detail-row td {
+      padding: 0;
+      height: auto;
+      text-align: left;
+    }
+    .detail-panel {
+      padding: 16px;
+      background: #fafafa;
+      border-top: 2px solid #2196f3;
+    }
+    .detail-header {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #222;
+    }
+    .detail-section {
+      margin-bottom: 16px;
+    }
+    .detail-section-title {
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #555;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+    }
+    .song-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .song-list li {
+      padding: 4px 0;
+      font-size: 0.95rem;
+    }
+    .song-missing {
+      color: #999;
+      font-size: 0.8rem;
+      margin-left: 8px;
+    }
+    .cond-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .cond-item {
+      margin-bottom: 12px;
+      padding: 10px;
+      background: #fff;
+      border-radius: 6px;
+      border: 1px solid #e0e0e0;
+    }
+    .cond-type {
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #333;
+    }
+    .cond-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      margin: 4px 0;
+    }
+    .cond-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+    .badge-red { background: #ffebee; color: #c62828; }
+    .badge-gold { background: #fff8e1; color: #f9a825; }
+    .badge-score { background: #e3f2fd; color: #1565c0; }
+    .badge-missing { background: #f5f5f5; color: #999; }
+    .per-song-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 8px;
+      margin-top: 6px;
+    }
+    .per-song-item {
+      background: #fafafa;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #eee;
+    }
+    .per-song-title {
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-bottom: 4px;
+      color: #666;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 1.1rem; }
+      .version-cell { width: 80px; min-width: 80px; font-size: 0.75rem; }
+      td { width: 44px; min-width: 44px; height: 44px; }
+      .dani-cell img { width: 32px; height: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>太鼓之达人 段位道场理论成绩</h1>
+  <div id="loading">加载数据中...</div>
+  <div id="app" style="display:none;">
+    <div class="matrix-wrapper">
+      <table id="matrix"></table>
+    </div>
+  </div>
+
+  <script>
+    const TYPE_LABELS = {
+      gauge: '魂槽',
+      hits: '敲击数',
+      good: '良',
+      ok: '可',
+      bad: '不可',
+      roll: '连打数',
+      combo: '连击数',
+      rolls: '连打数'
+    };
+
+    const ICON_MAP = {
+      gold: {
+        normal: 'dani_score_logo/GoldNormalClear.webp',
+        fc: 'dani_score_logo/GoldFullComboClear.webp',
+        perfect: 'dani_score_logo/GoldPerfectClear.webp'
+      },
+      red: {
+        normal: 'dani_score_logo/RedNormalClear.webp',
+        fc: 'dani_score_logo/RedFullComboClear.webp',
+        perfect: 'dani_score_logo/RedPerfectClear.webp'
+      },
+      notclear: 'dani_score_logo/NotClear.webp'
+    };
+
+    const DANI_ORDER = [
+      'shokyu', 'kyu_10', 'kyu_9', 'kyu_8', 'kyu_7', 'kyu_6',
+      'kyu_5', 'kyu_4', 'kyu_3', 'kyu_2', 'kyu_1',
+      'dan_1', 'dan_2', 'dan_3', 'dan_4', 'dan_5',
+      'dan_6', 'dan_7', 'dan_8', 'dan_9', 'dan_10',
+      'kuroto', 'meijin', 'choujin', 'tatsujin'
+    ];
+
+    const DANI_NAME_MAP = {
+      shokyu: '初級', kyu_10: '十級', kyu_9: '九級', kyu_8: '八級', kyu_7: '七級',
+      kyu_6: '六級', kyu_5: '五級', kyu_4: '四級', kyu_3: '三級', kyu_2: '二級',
+      kyu_1: '一級', dan_1: '初段', dan_2: '二段', dan_3: '三段', dan_4: '四段',
+      dan_5: '五段', dan_6: '六段', dan_7: '七段', dan_8: '八段', dan_9: '九段',
+      dan_10: '十段', kuroto: '玄人', meijin: '名人', choujin: '超人', tatsujin: '達人'
+    };
+
+    let danniData = null;
+    let scoreData = null;
+    let scoreMap = new Map();
+    let allDaniIds = [];
+    let selectedCellKey = null;
+
+    async function loadData() {
+      const [danniRes, scoreRes] = await Promise.all([
+        fetch('dani_datas/danni_data.json'),
+        fetch('score_example.json')
+      ]);
+      danniData = await danniRes.json();
+      scoreData = await scoreRes.json();
+
+      for (const item of scoreData) {
+        const key = `${item.song_no}_${item.level}`;
+        scoreMap.set(key, item.high_score_result);
+      }
+
+      allDaniIds = DANI_ORDER.slice();
+
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('app').style.display = 'block';
+      renderMatrix();
+    }
+
+    function getScore(songId, difficulty) {
+      if (songId == null || songId === -1) return null;
+      return scoreMap.get(`${songId}_${difficulty}`) || null;
+    }
+
+    function evaluate(value, operator, target) {
+      if (operator === '>=') return value >= target;
+      if (operator === '<') return value < target;
+      if (operator === '=') return value === target;
+      return false;
+    }
+
+    function computeDaniResult(dani) {
+      const songResults = dani.songs.map(s => ({
+        song: s,
+        score: getScore(s.song_id, s.difficulty)
+      }));
+
+      const hasMissing = songResults.some(r => r.score == null);
+
+      let frame = 'normal';
+      if (!hasMissing) {
+        const allPerfect = songResults.every(r => r.score[0] >= r.song.notes);
+        if (allPerfect) {
+          frame = 'perfect';
+        } else {
+          const allFC = songResults.every(r => r.score[4] >= r.song.notes);
+          if (allFC) frame = 'fc';
+        }
+      }
+
+      if (hasMissing) {
+        return { clear: 'not', frame: 'normal', hasMissing: true, songResults, values: {} };
+      }
+
+      function sum(idx) {
+        return songResults.reduce((a, b) => a + b.score[idx], 0);
+      }
+      const goodTotal = sum(0);
+      const okTotal = sum(1);
+      const badTotal = sum(2);
+      const rollTotal = sum(3);
+      const comboTotal = sum(4);
+      const hitsTotal = goodTotal + okTotal + rollTotal;
+
+      const values = {
+        gauge: null,
+        hits: hitsTotal,
+        good: goodTotal,
+        ok: okTotal,
+        bad: badTotal,
+        roll: rollTotal,
+        rolls: rollTotal,
+        combo: comboTotal
+      };
+
+      const perSongValues = {};
+      for (const type of ['gauge', 'hits', 'good', 'ok', 'bad', 'roll', 'rolls', 'combo']) {
+        perSongValues[type] = songResults.map((r) => {
+          if (type === 'gauge') return null;
+          const g = r.score[0], o = r.score[1], b = r.score[2], ro = r.score[3], c = r.score[4];
+          const mapping = {
+            hits: g + o + ro,
+            good: g,
+            ok: o,
+            bad: b,
+            roll: ro,
+            rolls: ro,
+            combo: c
+          };
+          return mapping[type];
+        });
+      }
+
+      let goldOk = true;
+      let redOk = true;
+
+      for (const cond of dani.clear_conditions) {
+        if (cond.type === 'gauge') continue;
+        const typeKey = cond.type;
+        if (cond.scope === 'shared') {
+          const playerVal = values[typeKey] ?? 0;
+          if (cond.gold && !evaluate(playerVal, cond.gold.operator, cond.gold.value)) {
+            goldOk = false;
+          }
+          if (cond.red && !evaluate(playerVal, cond.red.operator, cond.red.value)) {
+            redOk = false;
+          }
+        } else if (cond.scope === 'per_song') {
+          const arr = perSongValues[typeKey] || [0, 0, 0];
+          for (let i = 0; i < 3; i++) {
+            const playerVal = arr[i] ?? 0;
+            const goldReq = cond.gold ? cond.gold[i] : null;
+            const redReq = cond.red ? cond.red[i] : null;
+            if (goldReq && !evaluate(playerVal, goldReq.operator, goldReq.value)) {
+              goldOk = false;
+            }
+            if (redReq && !evaluate(playerVal, redReq.operator, redReq.value)) {
+              redOk = false;
+            }
+          }
+        }
+      }
+
+      let clear = 'not';
+      if (goldOk) clear = 'gold';
+      else if (redOk) clear = 'red';
+
+      return { clear, frame, hasMissing, songResults, values, perSongValues };
+    }
+
+    function renderMatrix() {
+      const table = document.getElementById('matrix');
+      const thead = document.createElement('thead');
+      const headerRow = document.createElement('tr');
+      const thVersion = document.createElement('th');
+      thVersion.textContent = '版本';
+      thVersion.className = 'version-header';
+      headerRow.appendChild(thVersion);
+
+      for (const daniId of allDaniIds) {
+        const th = document.createElement('th');
+        th.textContent = DANI_NAME_MAP[daniId] || daniId;
+        headerRow.appendChild(th);
+      }
+      thead.appendChild(headerRow);
+      table.appendChild(thead);
+
+      const tbody = document.createElement('tbody');
+      for (const version of danniData.versions) {
+        const daniMap = new Map(version.danis.map(d => [d.id, d]));
+        const row = document.createElement('tr');
+        row.id = `row-${version.id}`;
+
+        const versionCell = document.createElement('td');
+        versionCell.className = 'version-cell';
+        versionCell.textContent = version.name_zh || version.name || version.id;
+        row.appendChild(versionCell);
+
+        for (const daniId of allDaniIds) {
+          const cell = document.createElement('td');
+          const dani = daniMap.get(daniId);
+          if (!dani) {
+            cell.style.background = '#fafafa';
+            cell.title = '该版本无此段位';
+            row.appendChild(cell);
+            continue;
+          }
+
+          const result = computeDaniResult(dani);
+          cell.className = 'dani-cell';
+          const cellKey = `${version.id}_${daniId}`;
+          cell.dataset.key = cellKey;
+          cell.dataset.versionId = version.id;
+          cell.dataset.daniId = daniId;
+
+          if (result.hasMissing) {
+            cell.classList.add('missing');
+            cell.textContent = '未完全游玩';
+          } else if (result.clear === 'not') {
+            const img = document.createElement('img');
+            img.src = ICON_MAP.notclear;
+            img.alt = 'notclear';
+            cell.appendChild(img);
+          } else {
+            const img = document.createElement('img');
+            img.src = ICON_MAP[result.clear][result.frame];
+            img.alt = `${result.clear}-${result.frame}`;
+            cell.appendChild(img);
+          }
+
+          cell.addEventListener('click', () => toggleDetail(version, dani, result, cell));
+          row.appendChild(cell);
+        }
+        tbody.appendChild(row);
+      }
+      table.appendChild(tbody);
+    }
+
+    function toggleDetail(version, dani, result, cell) {
+      const cellKey = cell.dataset.key;
+      document.querySelectorAll('.dani-cell.selected').forEach(el => el.classList.remove('selected'));
+      const oldDetail = document.querySelector('.detail-row');
+      if (oldDetail) oldDetail.remove();
+
+      if (selectedCellKey === cellKey) {
+        selectedCellKey = null;
+        return;
+      }
+
+      selectedCellKey = cellKey;
+      cell.classList.add('selected');
+
+      const detailRow = document.createElement('tr');
+      detailRow.className = 'detail-row';
+      const detailCell = document.createElement('td');
+      detailCell.colSpan = allDaniIds.length + 1;
+      detailCell.innerHTML = buildDetailHTML(version, dani, result);
+      detailRow.appendChild(detailCell);
+
+      const currentRow = document.getElementById(`row-${version.id}`);
+      currentRow.after(detailRow);
+      detailRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function formatValue(type, value) {
+      if (value == null) return '-';
+      if (type === 'gauge') return `${(value * 100).toFixed(0)}%`;
+      return String(value);
+    }
+
+    function buildDetailHTML(version, dani, result) {
+      const header = `<div class="detail-header">${version.name_zh || version.name || version.id} · ${dani.name}</div>`;
+
+      let songsHtml = '<div class="detail-section"><div class="detail-section-title">课题曲</div><ul class="song-list">';
+      for (const s of dani.songs) {
+        const hasScore = result.songResults.find(r => r.song.order === s.order)?.score != null;
+        const missingTag = hasScore ? '' : '<span class="song-missing">（未游玩）</span>';
+        const diffStars = s.stars ? `★${s.stars}` : '';
+        const diffLabel = ['', '简单', '普通', '困难', '魔王', '魔王(裏)'][s.difficulty] || '';
+        songsHtml += `<li>${s.order}. ${s.name} <span style="color:#666;font-size:0.85rem;">[${diffLabel}${diffStars}]</span>${missingTag}</li>`;
+      }
+      songsHtml += '</ul></div>';
+
+      let condsHtml = '<div class="detail-section"><div class="detail-section-title">合格条件</div><ul class="cond-list">';
+      const sortedConds = [...dani.clear_conditions].sort((a, b) => (a.order || 0) - (b.order || 0));
+
+      for (const cond of sortedConds) {
+        const typeLabel = TYPE_LABELS[cond.type] || cond.type;
+        condsHtml += `<li class="cond-item"><div class="cond-type">${typeLabel}</div>`;
+
+        if (cond.type === 'gauge') {
+          condsHtml += `<div class="cond-row">`;
+          if (cond.red) {
+            condsHtml += `<span class="cond-badge badge-red">赤合格 ${cond.red.operator} ${formatValue('gauge', cond.red.value)}</span>`;
+          }
+          if (cond.gold) {
+            condsHtml += `<span class="cond-badge badge-gold">金合格 ${cond.gold.operator} ${formatValue('gauge', cond.gold.value)}</span>`;
+          }
+          condsHtml += `</div>`;
+        } else if (cond.scope === 'shared') {
+          const playerVal = result.values ? result.values[cond.type] : null;
+          const playerText = result.hasMissing ? '未游玩' : (playerVal != null ? formatValue(cond.type, playerVal) : '-');
+          const badgeClass = result.hasMissing ? 'badge-missing' : 'badge-score';
+          condsHtml += `<div class="cond-row">`;
+          if (cond.red) {
+            condsHtml += `<span class="cond-badge badge-red">赤合格 ${cond.red.operator} ${formatValue(cond.type, cond.red.value)}</span>`;
+          }
+          if (cond.gold) {
+            condsHtml += `<span class="cond-badge badge-gold">金合格 ${cond.gold.operator} ${formatValue(cond.type, cond.gold.value)}</span>`;
+          }
+          condsHtml += `<span class="cond-badge ${badgeClass}">最佳成绩 ${playerText}</span>`;
+          condsHtml += `</div>`;
+        } else if (cond.scope === 'per_song') {
+          condsHtml += `<div class="per-song-grid">`;
+          for (let i = 0; i < 3; i++) {
+            const songRes = result.songResults[i];
+            const hasScore = songRes && songRes.score != null;
+            const playerVal = result.perSongValues && result.perSongValues[cond.type] ? result.perSongValues[cond.type][i] : null;
+            const playerText = hasScore ? formatValue(cond.type, playerVal) : '未游玩';
+            const badgeClass = hasScore ? 'badge-score' : 'badge-missing';
+            const redReq = cond.red && cond.red[i] ? cond.red[i] : null;
+            const goldReq = cond.gold && cond.gold[i] ? cond.gold[i] : null;
+
+            condsHtml += `<div class="per-song-item">`;
+            condsHtml += `<div class="per-song-title">第 ${i + 1} 曲</div>`;
+            condsHtml += `<div style="margin-bottom:4px;">`;
+            if (redReq) {
+              condsHtml += `<span class="cond-badge badge-red">赤 ${redReq.operator} ${formatValue(cond.type, redReq.value)}</span> `;
+            }
+            if (goldReq) {
+              condsHtml += `<span class="cond-badge badge-gold">金 ${goldReq.operator} ${formatValue(cond.type, goldReq.value)}</span>`;
+            }
+            condsHtml += `</div>`;
+            condsHtml += `<span class="cond-badge ${badgeClass}">最佳成绩 ${playerText}</span>`;
+            condsHtml += `</div>`;
+          }
+          condsHtml += `</div>`;
+        }
+
+        condsHtml += '</li>';
+      }
+      condsHtml += '</ul></div>';
+
+      return `<div class="detail-panel">${header}${songsHtml}${condsHtml}</div>`;
+    }
+
+    loadData().catch(err => {
+      console.error(err);
+      document.getElementById('loading').textContent = '数据加载失败，请检查控制台';
+    });
+  </script>
+</body>
+</html>
