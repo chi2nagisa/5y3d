@@ -10256,7 +10256,7 @@
             },
             {
               "order": 2,
-              "song_id": -1,
+              "song_id": 112,
               "name": "電車で電車でOPA!OPA!OPA! - GMT mashup -",
               "difficulty": 4,
               "stars": 8,
@@ -14915,7 +14915,7 @@
     {
       "id": "nijiiro_2024",
       "name": "ニジイロ2024",
-      "name_zh": "虹2024",
+      "name_zh": "虹2024/2025秋",
       "start_date": "2024-06-01",
       "end_date": "2025-05-28",
       "danis": [
@@ -16715,9 +16715,1831 @@
       ]
     },
     {
+      "id": "nijiiro_china_2024_summer",
+      "name": "NIJIIRO CHINA 2024夏",
+      "name_zh": "2024夏",
+      "start_date": "2024-07-18",
+      "end_date": "2025-01-28",
+      "danis": [
+        {
+          "id": "kyu_5",
+          "name": "五級",
+          "sort_order": 6,
+          "total_notes": 697,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.92
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 0.95
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 845
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 895
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1115,
+              "name": "新時代",
+              "difficulty": 2,
+              "stars": 4,
+              "notes": 236,
+              "name_zh": "新时代"
+            },
+            {
+              "order": 2,
+              "song_id": 310,
+              "name": "脳漿炸裂ガール",
+              "difficulty": 2,
+              "stars": 5,
+              "notes": 199,
+              "name_zh": "脑浆炸裂GIRL"
+            },
+            {
+              "order": 3,
+              "song_id": 84,
+              "name": "カルメン 組曲一番終曲",
+              "difficulty": 2,
+              "stars": 5,
+              "notes": 262,
+              "name_zh": "卡门第一组曲 斗牛士之歌"
+            }
+          ]
+        },
+        {
+          "id": "kyu_4",
+          "name": "四級",
+          "sort_order": 7,
+          "total_notes": 771,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.94
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 0.97
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1043
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1101
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 51
+              },
+              "gold": {
+                "operator": "<",
+                "value": 26
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 727,
+              "name": "アスノヨゾラ哨戒班",
+              "difficulty": 2,
+              "stars": 6,
+              "notes": 291,
+              "name_zh": "ASUNO YOZORA SHOKAIHAN"
+            },
+            {
+              "order": 2,
+              "song_id": 1116,
+              "name": "ミックスナッツ",
+              "difficulty": 3,
+              "stars": 5,
+              "notes": 209,
+              "name_zh": "Mixed nuts"
+            },
+            {
+              "order": 3,
+              "song_id": 383,
+              "name": "Dragon Night",
+              "difficulty": 3,
+              "stars": 5,
+              "notes": 271,
+              "name_zh": "Dragon Night"
+            }
+          ]
+        },
+        {
+          "id": "kyu_3",
+          "name": "三級",
+          "sort_order": 8,
+          "total_notes": 944,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.95
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 0.99
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1276
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1330
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 54
+              },
+              "gold": {
+                "operator": "<",
+                "value": 28
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 233,
+              "name": "名探偵コナン メイン・テーマ",
+              "difficulty": 3,
+              "stars": 5,
+              "notes": 227,
+              "name_zh": "名侦探柯南 主题音乐"
+            },
+            {
+              "order": 2,
+              "song_id": 1140,
+              "name": "スカーレット警察のゲットーパトロール24時",
+              "difficulty": 3,
+              "stars": 5,
+              "notes": 349,
+              "name_zh": "Scarlet Police on Ghetto Patrol 24PM"
+            },
+            {
+              "order": 3,
+              "song_id": 1132,
+              "name": "まいにちがドンダフル",
+              "difficulty": 3,
+              "stars": 5,
+              "notes": 368,
+              "name_zh": "每天都是Donderful"
+            }
+          ]
+        },
+        {
+          "id": "kyu_2",
+          "name": "二級",
+          "sort_order": 9,
+          "total_notes": 1189,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.96
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1323
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1365
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 59
+              },
+              "gold": {
+                "operator": "<",
+                "value": 29
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1192,
+              "name": "トウキョウ・シャンディ・ランデヴ",
+              "difficulty": 3,
+              "stars": 5,
+              "notes": 303,
+              "name_zh": "Tokyo Shandy Rendezvous"
+            },
+            {
+              "order": 2,
+              "song_id": 1056,
+              "name": "グッバイ宣言",
+              "difficulty": 3,
+              "stars": 6,
+              "notes": 544,
+              "name_zh": "再见宣言"
+            },
+            {
+              "order": 3,
+              "song_id": 1182,
+              "name": "スキに理由はいらないじゃん！",
+              "difficulty": 3,
+              "stars": 6,
+              "notes": 342,
+              "name_zh": "喜欢是不需要理由的！"
+            }
+          ]
+        },
+        {
+          "id": "kyu_1",
+          "name": "一級",
+          "sort_order": 10,
+          "total_notes": 1032,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.97
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1298
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1339
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 34
+              },
+              "gold": {
+                "operator": "<",
+                "value": 17
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 816,
+              "name": "星屑ストラック",
+              "difficulty": 3,
+              "stars": 7,
+              "notes": 345,
+              "name_zh": "Struck Stardust"
+            },
+            {
+              "order": 2,
+              "song_id": 1218,
+              "name": "絆ノ奇跡",
+              "difficulty": 4,
+              "stars": 5,
+              "notes": 281,
+              "name_zh": "绊之奇迹"
+            },
+            {
+              "order": 3,
+              "song_id": 2,
+              "name": "天体観測",
+              "difficulty": 4,
+              "stars": 6,
+              "notes": 406,
+              "name_zh": "天体観測"
+            }
+          ]
+        },
+        {
+          "id": "dan_1",
+          "name": "初段",
+          "sort_order": 11,
+          "total_notes": 1415,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.98
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 933
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 991
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 31
+              },
+              "gold": {
+                "operator": "<",
+                "value": 15
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 218
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 245
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1114,
+              "name": "シャイニングスター",
+              "difficulty": 4,
+              "stars": 6,
+              "notes": 369,
+              "name_zh": "Shining Star"
+            },
+            {
+              "order": 2,
+              "song_id": 480,
+              "name": "魔法をかけて！",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 444,
+              "name_zh": "魔法をかけて！"
+            },
+            {
+              "order": 3,
+              "song_id": 1197,
+              "name": "Re：End of a Dream",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 602,
+              "name_zh": "Re ： End of a Dream"
+            }
+          ]
+        },
+        {
+          "id": "dan_2",
+          "name": "二段",
+          "sort_order": 12,
+          "total_notes": 1558,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.98
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1073
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1133
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 30
+              },
+              "gold": {
+                "operator": "<",
+                "value": 15
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 230
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 258
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 408,
+              "name": "Highschool love!",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 387,
+              "name_zh": "Highschool love!"
+            },
+            {
+              "order": 2,
+              "song_id": 687,
+              "name": "黒神クロニクル",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 567,
+              "name_zh": "KOKUSHIN CHRONICLE"
+            },
+            {
+              "order": 3,
+              "song_id": 307,
+              "name": "忍者は最高",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 604,
+              "name_zh": "NINJA WA SAIKOU"
+            }
+          ]
+        },
+        {
+          "id": "dan_3",
+          "name": "三段",
+          "sort_order": 13,
+          "total_notes": 1673,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1203
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1264
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 28
+              },
+              "gold": {
+                "operator": "<",
+                "value": 14
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 299
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 334
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 945,
+              "name": "RESTART",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 544,
+              "name_zh": "RESTART"
+            },
+            {
+              "order": 2,
+              "song_id": 300,
+              "name": "Mulberry",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 544,
+              "name_zh": "Mulberry"
+            },
+            {
+              "order": 3,
+              "song_id": 565,
+              "name": "ほうかご☆マジシャン",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 585,
+              "name_zh": "放学後☆魔术师"
+            }
+          ]
+        },
+        {
+          "id": "dan_4",
+          "name": "四段",
+          "sort_order": 14,
+          "total_notes": 1939,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1456
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1522
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 28
+              },
+              "gold": {
+                "operator": "<",
+                "value": 14
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 237
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 265
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 93,
+              "name": "「ルスランとリュドミラ」序曲",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 659,
+              "name_zh": "Ruslan and Lyudmila"
+            },
+            {
+              "order": 2,
+              "song_id": 435,
+              "name": "戦え！ T3防衛隊 ～GDI mix～",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 583,
+              "name_zh": "戦え！ T3防衛隊 ～GDI mix～"
+            },
+            {
+              "order": 3,
+              "song_id": 90,
+              "name": "カレ・カノ・カノン",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 697,
+              "name_zh": "亲亲卡农"
+            }
+          ]
+        },
+        {
+          "id": "dan_5",
+          "name": "五段",
+          "sort_order": 15,
+          "total_notes": 2120,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1663
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1729
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 30
+              },
+              "gold": {
+                "operator": "<",
+                "value": 15
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 78
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 88
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1036,
+              "name": "恋はドント・ダウト",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 752,
+              "name_zh": "Don't Doubt This Love"
+            },
+            {
+              "order": 2,
+              "song_id": 34,
+              "name": "Amanda",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 523,
+              "name_zh": "Amanda"
+            },
+            {
+              "order": 3,
+              "song_id": 1232,
+              "name": "Fallen Angel",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 845,
+              "name_zh": "Fallen Angel"
+            }
+          ]
+        },
+        {
+          "id": "dan_6",
+          "name": "六段",
+          "sort_order": 16,
+          "total_notes": 2004,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": "=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1642
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1698
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 19
+              },
+              "gold": {
+                "operator": "<",
+                "value": 9
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 14
+                },
+                {
+                  "operator": ">=",
+                  "value": 71
+                },
+                {
+                  "operator": ">=",
+                  "value": 11
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 15
+                },
+                {
+                  "operator": ">=",
+                  "value": 78
+                },
+                {
+                  "operator": ">=",
+                  "value": 12
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 525,
+              "name": "てんびん座急行 夜を行く",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 669,
+              "name_zh": "Libra Express runs at night"
+            },
+            {
+              "order": 2,
+              "song_id": 1021,
+              "name": "Donder Time",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 458,
+              "name_zh": "Donder Time"
+            },
+            {
+              "order": 3,
+              "song_id": 968,
+              "name": "Hyper Bass (feat. Yunomi)",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 877,
+              "name_zh": "Hyper Bass (feat. Yunomi)"
+            }
+          ]
+        },
+        {
+          "id": "dan_7",
+          "name": "七段",
+          "sort_order": 17,
+          "total_notes": 2502,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": "=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2141
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2203
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 17
+              },
+              "gold": {
+                "operator": "<",
+                "value": 8
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 62
+                },
+                {
+                  "operator": ">=",
+                  "value": 44
+                },
+                {
+                  "operator": "=",
+                  "value": 0
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 67
+                },
+                {
+                  "operator": ">=",
+                  "value": 47
+                },
+                {
+                  "operator": "=",
+                  "value": 0
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 506,
+              "name": "チェインクロニクル 通常バトルメドレー",
+              "difficulty": 5,
+              "stars": 9,
+              "notes": 778,
+              "name_zh": "チェインクロニクル 通常バトルメドレー"
+            },
+            {
+              "order": 2,
+              "song_id": 49,
+              "name": "サンバ アレグリーア",
+              "difficulty": 5,
+              "stars": 9,
+              "notes": 765,
+              "name_zh": "Samba Alegria"
+            },
+            {
+              "order": 3,
+              "song_id": 407,
+              "name": "Wasabi Body Blow",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 959,
+              "name_zh": "Wasabi Body Blow"
+            }
+          ]
+        },
+        {
+          "id": "dan_8",
+          "name": "八段",
+          "sort_order": 18,
+          "total_notes": 2346,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": "=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2097
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2146
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 12
+              },
+              "gold": {
+                "operator": "<",
+                "value": 6
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 21
+                },
+                {
+                  "operator": ">=",
+                  "value": 12
+                },
+                {
+                  "operator": ">=",
+                  "value": 14
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 23
+                },
+                {
+                  "operator": ">=",
+                  "value": 23
+                },
+                {
+                  "operator": ">=",
+                  "value": 15
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 939,
+              "name": "いっそこのままで",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 765,
+              "name_zh": "不如就这样继续下去"
+            },
+            {
+              "order": 2,
+              "song_id": 1000,
+              "name": "しょうゆ de Show you!",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 729,
+              "name_zh": "SHOUYU de Show you!"
+            },
+            {
+              "order": 3,
+              "song_id": 80,
+              "name": "練習曲Op.10-4",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 852,
+              "name_zh": "练习曲Op.10-4"
+            }
+          ]
+        },
+        {
+          "id": "dan_9",
+          "name": "九段",
+          "sort_order": 19,
+          "total_notes": 2103,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": "=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1963
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1998
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 10
+              },
+              "gold": {
+                "operator": "<",
+                "value": 5
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 44
+                },
+                {
+                  "operator": ">=",
+                  "value": 17
+                },
+                {
+                  "operator": ">=",
+                  "value": 6
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 48
+                },
+                {
+                  "operator": ">=",
+                  "value": 18
+                },
+                {
+                  "operator": ">=",
+                  "value": 7
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 20,
+              "name": "IN THE ZONE",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 765,
+              "name_zh": "IN THE ZONE"
+            },
+            {
+              "order": 2,
+              "song_id": 746,
+              "name": "マジカル・パフェ",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 652,
+              "name_zh": "Magical Parfait"
+            },
+            {
+              "order": 3,
+              "song_id": 635,
+              "name": "須佐之男",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 686,
+              "name_zh": "须佐之男"
+            }
+          ]
+        },
+        {
+          "id": "dan_10",
+          "name": "十段",
+          "sort_order": 20,
+          "total_notes": 2468,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": "=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": "<",
+                  "value": 20
+                },
+                {
+                  "operator": "<",
+                  "value": 30
+                },
+                {
+                  "operator": "<",
+                  "value": 30
+                }
+              ],
+              "gold": [
+                {
+                  "operator": "<",
+                  "value": 10
+                },
+                {
+                  "operator": "<",
+                  "value": 15
+                },
+                {
+                  "operator": "<",
+                  "value": 15
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 7
+              },
+              "gold": {
+                "operator": "<",
+                "value": 3
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 59
+                },
+                {
+                  "operator": ">=",
+                  "value": 132
+                },
+                {
+                  "operator": ">=",
+                  "value": 17
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 63
+                },
+                {
+                  "operator": ">=",
+                  "value": 141
+                },
+                {
+                  "operator": ">=",
+                  "value": 20
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1013,
+              "name": "Amber Light",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 634,
+              "name_zh": "Amber Light"
+            },
+            {
+              "order": 2,
+              "song_id": 355,
+              "name": "またさいたま2000",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 835,
+              "name_zh": "又埼玉2000"
+            },
+            {
+              "order": 3,
+              "song_id": 1197,
+              "name": "Re：End of a Dream",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 999,
+              "name_zh": "Re ： End of a Dream"
+            }
+          ]
+        },
+        {
+          "id": "kuroto",
+          "name": "玄人",
+          "sort_order": 21,
+          "total_notes": 2634,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": "=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 50
+              },
+              "gold": {
+                "operator": "<",
+                "value": 23
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 6
+              },
+              "gold": {
+                "operator": "<",
+                "value": 3
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 104
+                },
+                {
+                  "operator": ">=",
+                  "value": 9
+                },
+                {
+                  "operator": ">=",
+                  "value": 41
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 127
+                },
+                {
+                  "operator": ">=",
+                  "value": 11
+                },
+                {
+                  "operator": ">=",
+                  "value": 44
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 577,
+              "name": "超絶技巧系少女",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 803,
+              "name_zh": "超绝技巧系少女"
+            },
+            {
+              "order": 2,
+              "song_id": 940,
+              "name": "wonderful ROUTINE",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 777,
+              "name_zh": "wonderful ROUTINE"
+            },
+            {
+              "order": 3,
+              "song_id": 1214,
+              "name": "GORI × GORI × SafaRI",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1054,
+              "name_zh": "GORI × GORI × SafaRI"
+            }
+          ]
+        },
+        {
+          "id": "meijin",
+          "name": "名人",
+          "sort_order": 22,
+          "total_notes": 3076,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": "=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 30
+              },
+              "gold": {
+                "operator": "<",
+                "value": 15
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 5
+              },
+              "gold": {
+                "operator": "<",
+                "value": 2
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 137
+                },
+                {
+                  "operator": ">=",
+                  "value": 93
+                },
+                {
+                  "operator": ">=",
+                  "value": 70
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 160
+                },
+                {
+                  "operator": ">=",
+                  "value": 108
+                },
+                {
+                  "operator": ">=",
+                  "value": 84
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 943,
+              "name": "クラポルポルスカ",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 723,
+              "name_zh": "竖波波卡"
+            },
+            {
+              "order": 2,
+              "song_id": 94,
+              "name": "弩蚊怒夏",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 1000,
+              "name_zh": "弩蚊怒夏"
+            },
+            {
+              "order": 3,
+              "song_id": 1215,
+              "name": "Nosferatu",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1353,
+              "name_zh": "Nosferatu"
+            }
+          ]
+        },
+        {
+          "id": "choujin",
+          "name": "超人",
+          "sort_order": 23,
+          "total_notes": 3447,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": "=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 15
+              },
+              "gold": {
+                "operator": "<",
+                "value": 6
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 4
+              },
+              "gold": {
+                "operator": "<",
+                "value": 2
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 183
+                },
+                {
+                  "operator": ">=",
+                  "value": 208
+                },
+                {
+                  "operator": ">=",
+                  "value": 93
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 205
+                },
+                {
+                  "operator": ">=",
+                  "value": 234
+                },
+                {
+                  "operator": ">=",
+                  "value": 115
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 222,
+              "name": "メタナイトの逆襲メドレー",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1000,
+              "name_zh": "メタナイトの逆襲メドレー"
+            },
+            {
+              "order": 2,
+              "song_id": 892,
+              "name": "幕末維新譚",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 1109,
+              "name_zh": "幕末维新谭"
+            },
+            {
+              "order": 3,
+              "song_id": 1216,
+              "name": "CUT! into the FUTURE",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1338,
+              "name_zh": "CUT! into the FUTURE"
+            }
+          ]
+        },
+        {
+          "id": "tatsujin",
+          "name": "達人",
+          "sort_order": 24,
+          "total_notes": 3324,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": "=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 8
+              },
+              "gold": {
+                "operator": "<",
+                "value": 1
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 3
+              },
+              "gold": {
+                "operator": "<",
+                "value": 1
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 220
+                },
+                {
+                  "operator": ">=",
+                  "value": 151
+                },
+                {
+                  "operator": ">=",
+                  "value": 136
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 272
+                },
+                {
+                  "operator": ">=",
+                  "value": 192
+                },
+                {
+                  "operator": ">=",
+                  "value": 146
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 890,
+              "name": "わら得る2000",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 818,
+              "name_zh": "可笑可啸2000"
+            },
+            {
+              "order": 2,
+              "song_id": 834,
+              "name": "疾風怒濤",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1083,
+              "name_zh": "疾风怒涛"
+            },
+            {
+              "order": 3,
+              "song_id": 1227,
+              "name": "23時54分、陽の旅路へのプレリュード",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1423,
+              "name_zh": "23点54分，通往阳光旅途的前奏"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "nijiiro_2025",
       "name": "ニジイロ2025",
-      "name_zh": "虹2025",
+      "name_zh": "虹2025/2025秋",
       "start_date": "2025-06-07",
       "end_date": null,
       "danis": [

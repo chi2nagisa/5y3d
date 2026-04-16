@@ -121,14 +121,51 @@
       border-bottom: 1px solid #ddd;
       padding-bottom: 4px;
     }
-    .song-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .song-list li {
-      padding: 4px 0;
+    .song-table {
+      width: 100%;
+      border-collapse: collapse;
       font-size: 0.95rem;
+    }
+    .song-table td {
+      padding: 6px 10px 6px 0;
+      vertical-align: baseline;
+      border: none;
+      white-space: nowrap;
+    }
+    .song-table td:last-child {
+      padding-right: 0;
+    }
+    .song-name-cell {
+      max-width: 240px;
+      white-space: normal;
+    }
+    .song-diff {
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .song-id {
+      color: #888;
+      font-size: 0.8rem;
+      margin-left: 4px;
+    }
+    .stat-label {
+      display: inline-block;
+      width: 2.5em;
+      text-align: right;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .stat-val {
+      display: inline-block;
+      width: 3em;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+    .stat-val.combo {
+      width: 5em;
+    }
+    .stat-highlight {
+      font-weight: bold;
     }
     .song-missing {
       color: #999;
@@ -488,15 +525,33 @@
     function buildDetailHTML(version, dani, result) {
       const header = `<div class="detail-header">${version.name_zh || version.name || version.id} · ${dani.name}</div>`;
 
-      let songsHtml = '<div class="detail-section"><div class="detail-section-title">课题曲</div><ul class="song-list">';
+      let songsHtml = '<div class="detail-section"><div class="detail-section-title">课题曲</div><table class="song-table"><tbody>';
       for (const s of dani.songs) {
-        const hasScore = result.songResults.find(r => r.song.order === s.order)?.score != null;
-        const missingTag = hasScore ? '' : '<span class="song-missing">（未游玩）</span>';
+        const songRes = result.songResults.find(r => r.song.order === s.order);
+        const hasScore = songRes && songRes.score != null;
         const diffStars = s.stars ? `★${s.stars}` : '';
         const diffLabel = ['', '简单', '普通', '困难', '魔王', '魔王(裏)'][s.difficulty] || '';
-        songsHtml += `<li>${s.order}. ${s.name} <span style="color:#666;font-size:0.85rem;">[${diffLabel}${diffStars}]</span>${missingTag}</li>`;
+        const idTag = s.song_id > 0 ? `<span class="song-id">ID:${s.song_id}</span>` : '';
+
+        let statsHtml = '';
+        if (hasScore) {
+          const sc = songRes.score;
+          const isFullCombo = sc[4] >= s.notes;
+          const comboClass = isFullCombo ? 'stat-val combo stat-highlight' : 'stat-val combo';
+          statsHtml = `
+            <td><span class="stat-label">良:</span><span class="stat-val">${sc[0]}</span></td>
+            <td><span class="stat-label">可:</span><span class="stat-val">${sc[1]}</span></td>
+            <td><span class="stat-label">不可:</span><span class="stat-val">${sc[2]}</span></td>
+            <td><span class="stat-label">连打:</span><span class="stat-val">${sc[3]}</span></td>
+            <td><span class="stat-label">连击:</span><span class="${comboClass}">${sc[4]}/${s.notes}</span></td>
+          `;
+        } else {
+          statsHtml = `<td colspan="5"><span class="song-missing">未游玩</span></td>`;
+        }
+
+        songsHtml += `<tr><td class="song-name-cell">${s.order}. ${s.name} <span class="song-diff">[${diffLabel}${diffStars}]</span>${idTag}</td>${statsHtml}</tr>`;
       }
-      songsHtml += '</ul></div>';
+      songsHtml += '</tbody></table></div>';
 
       let condsHtml = '<div class="detail-section"><div class="detail-section-title">合格条件</div><ul class="cond-list">';
       const sortedConds = [...dani.clear_conditions].sort((a, b) => (a.order || 0) - (b.order || 0));
