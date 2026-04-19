@@ -31,6 +31,38 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       position: relative;
     }
+    .tab-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      padding: 0 4px;
+    }
+    .tab-btn {
+      padding: 8px 20px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #666;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .tab-btn:hover {
+      background: #f5f5f5;
+    }
+    .tab-btn.active {
+      color: #1565c0;
+      border-color: #1565c0;
+      background: #e3f2fd;
+      font-weight: 600;
+    }
+    .placeholder {
+      padding: 60px 20px;
+      text-align: center;
+      color: #888;
+      font-size: 1rem;
+    }
     table {
       border-collapse: collapse;
       min-width: 100%;
@@ -238,6 +270,10 @@
   <h1>太鼓之达人 段位道场理论成绩</h1>
   <div id="loading">加载数据中...</div>
   <div id="app" style="display:none;">
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="main" onclick="switchTab('main')">本传</button>
+      <button class="tab-btn" data-tab="extra" onclick="switchTab('extra')">外传</button>
+    </div>
     <div class="matrix-wrapper">
       <table id="matrix"></table>
     </div>
@@ -252,7 +288,8 @@
       bad: '不可',
       roll: '连打数',
       combo: '连击数',
-      rolls: '连打数'
+      rolls: '连打数',
+      score: '得分'
     };
 
     const ICON_MAP = {
@@ -286,22 +323,28 @@
     };
 
     let danniData = null;
+    let extraDanniData = null;
     let scoreData = null;
     let scoreMap = new Map();
+    let highScoreMap = new Map();
     let allDaniIds = [];
     let selectedCellKey = null;
+    let currentTab = 'main';
 
     async function loadData() {
-      const [danniRes, scoreRes] = await Promise.all([
+      const [danniRes, extraRes, scoreRes] = await Promise.all([
         fetch('dani_datas/danni_data.json'),
+        fetch('dani_datas/gaiden_data.json'),
         fetch('score_example.json')
       ]);
       danniData = await danniRes.json();
+      extraDanniData = await extraRes.json();
       scoreData = await scoreRes.json();
 
       for (const item of scoreData) {
         const key = `${item.song_no}_${item.level}`;
         scoreMap.set(key, item.high_score_result);
+        highScoreMap.set(key, item.high_score);
       }
 
       allDaniIds = DANI_ORDER.slice();
@@ -316,6 +359,11 @@
       return scoreMap.get(`${songId}_${difficulty}`) || null;
     }
 
+    function getHighScore(songId, difficulty) {
+      if (songId == null || songId === -1) return null;
+      return highScoreMap.get(`${songId}_${difficulty}`) || null;
+    }
+
     function evaluate(value, operator, target) {
       if (operator === '>=') return value >= target;
       if (operator === '<') return value < target;
@@ -326,7 +374,8 @@
     function computeDaniResult(dani) {
       const songResults = dani.songs.map(s => ({
         song: s,
-        score: getScore(s.song_id, s.difficulty)
+        score: getScore(s.song_id, s.difficulty),
+        highScore: getHighScore(s.song_id, s.difficulty)
       }));
 
       const hasMissing = songResults.some(r => r.score == null);
@@ -364,13 +413,15 @@
         bad: badTotal,
         roll: rollTotal,
         rolls: rollTotal,
-        combo: comboTotal
+        combo: comboTotal,
+        score: songResults.reduce((a, b) => a + (b.highScore || 0), 0)
       };
 
       const perSongValues = {};
-      for (const type of ['gauge', 'hits', 'good', 'ok', 'bad', 'roll', 'rolls', 'combo']) {
+      for (const type of ['gauge', 'hits', 'good', 'ok', 'bad', 'roll', 'rolls', 'combo', 'score']) {
         perSongValues[type] = songResults.map((r) => {
           if (type === 'gauge') return null;
+          if (type === 'score') return r.highScore || 0;
           const g = r.score[0], o = r.score[1], b = r.score[2], ro = r.score[3], c = r.score[4];
           const mapping = {
             hits: g + o + ro,
@@ -424,6 +475,86 @@
 
     function renderMatrix() {
       const table = document.getElementById('matrix');
+      table.innerHTML = '';
+
+      const oldDetail = document.querySelector('.detail-row');
+      if (oldDetail) oldDetail.remove();
+      selectedCellKey = null;
+      document.querySelectorAll('.dani-cell.selected').forEach(el => el.classList.remove('selected'));
+
+      const existingPlaceholder = table.parentNode.querySelector('.placeholder');
+      if (existingPlaceholder) existingPlaceholder.remove();
+
+      if (currentTab === 'extra') {
+        table.style.display = '';
+        if (!extraDanniData || !extraDanniData.versions || extraDanniData.versions.length === 0) {
+          const placeholder = document.createElement('div');
+          placeholder.className = 'placeholder';
+          placeholder.textContent = '外传段位数据加载失败';
+          table.parentNode.insertBefore(placeholder, table.nextSibling);
+          if (table.style.display !== 'none') table.style.display = 'none';
+          return;
+        }
+
+        const thead = document.createElement('thead');
+        const headerRow = document.createElement('tr');
+        const thName = document.createElement('th');
+        thName.textContent = '段位';
+        thName.className = 'version-header';
+        headerRow.appendChild(thName);
+
+        const thStatus = document.createElement('th');
+        thStatus.textContent = '状态';
+        headerRow.appendChild(thStatus);
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
+
+        const tbody = document.createElement('tbody');
+        for (const version of extraDanniData.versions) {
+          for (const dani of version.danis) {
+            const row = document.createElement('tr');
+            row.id = `row-${version.id}-${dani.id}`;
+
+            const nameCell = document.createElement('td');
+            nameCell.className = 'version-cell';
+            nameCell.textContent = dani.name;
+            row.appendChild(nameCell);
+
+            const result = computeDaniResult(dani);
+
+            const statusCell = document.createElement('td');
+            statusCell.className = 'dani-cell';
+            const cellKey = `${version.id}_${dani.id}`;
+            statusCell.dataset.key = cellKey;
+            statusCell.dataset.versionId = version.id;
+            statusCell.dataset.daniId = dani.id;
+
+            if (result.hasMissing) {
+              statusCell.classList.add('missing');
+              statusCell.textContent = '未完全游玩';
+            } else if (result.clear === 'not') {
+              const img = document.createElement('img');
+              img.src = ICON_MAP.notclear;
+              img.alt = 'notclear';
+              statusCell.appendChild(img);
+            } else {
+              const img = document.createElement('img');
+              img.src = ICON_MAP[result.clear][result.frame];
+              img.alt = `${result.clear}-${result.frame}`;
+              statusCell.appendChild(img);
+            }
+
+            statusCell.addEventListener('click', () => toggleDetail(version, dani, result, statusCell));
+            row.appendChild(statusCell);
+            tbody.appendChild(row);
+          }
+        }
+        table.appendChild(tbody);
+        return;
+      }
+
+      table.style.display = '';
+
       const thead = document.createElement('thead');
       const headerRow = document.createElement('tr');
       const thVersion = document.createElement('th');
@@ -490,6 +621,15 @@
       table.appendChild(tbody);
     }
 
+    function switchTab(tab) {
+      if (tab === currentTab) return;
+      currentTab = tab;
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.tab === tab);
+      });
+      renderMatrix();
+    }
+
     function toggleDetail(version, dani, result, cell) {
       const cellKey = cell.dataset.key;
       document.querySelectorAll('.dani-cell.selected').forEach(el => el.classList.remove('selected'));
@@ -507,11 +647,12 @@
       const detailRow = document.createElement('tr');
       detailRow.className = 'detail-row';
       const detailCell = document.createElement('td');
-      detailCell.colSpan = allDaniIds.length + 1;
+      const colCount = document.querySelectorAll('#matrix thead th').length;
+      detailCell.colSpan = colCount;
       detailCell.innerHTML = buildDetailHTML(version, dani, result);
       detailRow.appendChild(detailCell);
 
-      const currentRow = document.getElementById(`row-${version.id}`);
+      const currentRow = cell.closest('tr');
       currentRow.after(detailRow);
       detailRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }

@@ -1,0 +1,5261 @@
+{
+  "versions": [
+    {
+      "id": "gaiden_original",
+      "name": "オリジナル外伝",
+      "name_zh": "原创外传",
+      "start_date": null,
+      "end_date": null,
+      "danis": [
+        {
+          "id": "gaiden_001",
+          "name": "挑戦！ホワイト玄人への道",
+          "sort_order": 1,
+          "total_notes": 2561,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 80
+              },
+              "gold": {
+                "operator": "<",
+                "value": 60
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 20
+              },
+              "gold": {
+                "operator": "<",
+                "value": 15
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 499,
+              "name": "ノるどん2000",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 936,
+              "name_zh": "搭车咚2000"
+            },
+            {
+              "order": 2,
+              "song_id": 477,
+              "name": "紫煌ノ乱",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 823,
+              "name_zh": "紫煌之乱"
+            },
+            {
+              "order": 3,
+              "song_id": 338,
+              "name": "きたさいたま2000",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 802,
+              "name_zh": "北埼玉2000"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_002",
+          "name": "挑戦！ホワイト名人への道",
+          "sort_order": 2,
+          "total_notes": 2698,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 120
+              },
+              "gold": {
+                "operator": "<",
+                "value": 100
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 30
+              },
+              "gold": {
+                "operator": "<",
+                "value": 20
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 94,
+              "name": "弩蚊怒夏",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 1000,
+              "name_zh": "弩蚊怒夏"
+            },
+            {
+              "order": 2,
+              "song_id": 179,
+              "name": "はたラク2000",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 876,
+              "name_zh": "工作2000"
+            },
+            {
+              "order": 3,
+              "song_id": 365,
+              "name": "燎原ノ舞",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 822,
+              "name_zh": "燎原ノ舞"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_003",
+          "name": "挑戦！ホワイト超人への道",
+          "sort_order": 3,
+          "total_notes": 3081,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 300
+              },
+              "gold": {
+                "operator": "<",
+                "value": 220
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 45
+              },
+              "gold": {
+                "operator": "<",
+                "value": 30
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 401,
+              "name": "スーハー2000",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 668,
+              "name_zh": "吸哈2000"
+            },
+            {
+              "order": 2,
+              "song_id": 265,
+              "name": "〆ドレー2000",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 1414,
+              "name_zh": "糸且曲2000"
+            },
+            {
+              "order": 3,
+              "song_id": 243,
+              "name": "万戈イム－一ノ十",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 999,
+              "name_zh": "万戈イム－一ノ十"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_004",
+          "name": "エトウからの挑戦状#1",
+          "sort_order": 4,
+          "total_notes": 2142,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 428
+                },
+                {
+                  "operator": ">=",
+                  "value": 568
+                },
+                {
+                  "operator": ">=",
+                  "value": 389
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 465
+                },
+                {
+                  "operator": ">=",
+                  "value": 646
+                },
+                {
+                  "operator": ">=",
+                  "value": 470
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "type": "score",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2404000
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2594000
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 191,
+              "name": "ボクハシンセ",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 612,
+              "name_zh": "我是合成器"
+            },
+            {
+              "order": 2,
+              "song_id": 346,
+              "name": "Red Rose Evangel",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 765,
+              "name_zh": "Red Rose Evangel"
+            },
+            {
+              "order": 3,
+              "song_id": 1170,
+              "name": "エール・エクス・マキナ！",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 765,
+              "name_zh": "YELL EX MAKINA!"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_005",
+          "name": "軌跡！ニジイロ2021 セレクション#3",
+          "sort_order": 5,
+          "total_notes": 3127,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 3288
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 3300
+              }
+            },
+            {
+              "order": 3,
+              "type": "score",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2995000
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 3000000
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1031,
+              "name": "Hello, Worldooon!!",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 954,
+              "name_zh": "Hello, Worldooon!!"
+            },
+            {
+              "order": 2,
+              "song_id": 1012,
+              "name": "4+1のそれぞれの未来",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1001,
+              "name_zh": "4+1的各自的未来"
+            },
+            {
+              "order": 3,
+              "song_id": 1042,
+              "name": "刻竜 ～Kokuryu～",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1172,
+              "name_zh": "刻龙 ～Kokuryu～"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_006",
+          "name": "軌跡！ニジイロ2021 セレクション#2",
+          "sort_order": 6,
+          "total_notes": 2736,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2900
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2950
+              }
+            },
+            {
+              "order": 3,
+              "type": "score",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2975000
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2990000
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1051,
+              "name": "punk bastards",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 749,
+              "name_zh": "punk bastards"
+            },
+            {
+              "order": 2,
+              "song_id": 1071,
+              "name": "ex寅 Trap!!",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 888,
+              "name_zh": "ex寅 Trap!!"
+            },
+            {
+              "order": 3,
+              "song_id": 1053,
+              "name": "平等院鳳凰ドン vs 鳥獣戯カッ",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1099,
+              "name_zh": "平等院凤凰咚 vs 鸟兽戏咔"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_007",
+          "name": "軌跡！ニジイロ2021 セレクション#1",
+          "sort_order": 7,
+          "total_notes": 2202,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2036
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2092
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 15
+              },
+              "gold": {
+                "operator": "<",
+                "value": 8
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 991,
+              "name": "傾奇者、罷り通る！",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 694,
+              "name_zh": "Kabukimono, Keep it up!"
+            },
+            {
+              "order": 2,
+              "song_id": 1047,
+              "name": "燃えよサファイア",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 788,
+              "name_zh": "Sapphire On Fire"
+            },
+            {
+              "order": 3,
+              "song_id": 1079,
+              "name": "GO ON ～未来へ～",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 720,
+              "name_zh": "GO ON ～朝向未来～"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_008",
+          "name": "夢奏！TWCS'24 準決勝戦 予備曲",
+          "sort_order": 8,
+          "total_notes": 2691,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 75
+              },
+              "gold": {
+                "operator": "<",
+                "value": 50
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 20
+              },
+              "gold": {
+                "operator": "<",
+                "value": 13
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 118
+                },
+                {
+                  "operator": ">=",
+                  "value": 106
+                },
+                {
+                  "operator": ">=",
+                  "value": 62
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 133
+                },
+                {
+                  "operator": ">=",
+                  "value": 114
+                },
+                {
+                  "operator": ">=",
+                  "value": 72
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 971,
+              "name": "星河一天",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 858,
+              "name_zh": "星河一天"
+            },
+            {
+              "order": 2,
+              "song_id": 760,
+              "name": "青天の黎明",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 1000,
+              "name_zh": "青天之黎明"
+            },
+            {
+              "order": 3,
+              "song_id": 826,
+              "name": "アムピト♢リーテー",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 833,
+              "name_zh": "Amphit◇rite"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_009",
+          "name": "夢奏！TWCS'24 3位決定戦 予備曲",
+          "sort_order": 9,
+          "total_notes": 2938,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 35
+              },
+              "gold": {
+                "operator": "<",
+                "value": 20
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 15
+              },
+              "gold": {
+                "operator": "<",
+                "value": 10
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 54
+                },
+                {
+                  "operator": ">=",
+                  "value": 6
+                },
+                {
+                  "operator": ">=",
+                  "value": 0
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 55
+                },
+                {
+                  "operator": ">=",
+                  "value": 7
+                },
+                {
+                  "operator": ">=",
+                  "value": 0
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 630,
+              "name": "天照",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 858,
+              "name_zh": "天照"
+            },
+            {
+              "order": 2,
+              "song_id": 959,
+              "name": "螺旋周回軌道",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 969,
+              "name_zh": "螺旋周回轨道"
+            },
+            {
+              "order": 3,
+              "song_id": 990,
+              "name": "赤と白薔薇の魔女",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 1111,
+              "name_zh": "AkatoSirobaranoMajo"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_010",
+          "name": "夢奏！TWCS'24 決勝戦 予備曲",
+          "sort_order": 10,
+          "total_notes": 3283,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 9
+              },
+              "gold": {
+                "operator": "<",
+                "value": 5
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 4
+              },
+              "gold": {
+                "operator": "<",
+                "value": 2
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 67
+                },
+                {
+                  "operator": ">=",
+                  "value": 126
+                },
+                {
+                  "operator": ">=",
+                  "value": 172
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 84
+                },
+                {
+                  "operator": ">=",
+                  "value": 157
+                },
+                {
+                  "operator": ">=",
+                  "value": 216
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 243,
+              "name": "万戈イム－一ノ十",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 999,
+              "name_zh": "万戈イム－一ノ十"
+            },
+            {
+              "order": 2,
+              "song_id": 700,
+              "name": "Taiko Drum Monster",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1044,
+              "name_zh": "Taiko Drum Monster"
+            },
+            {
+              "order": 3,
+              "song_id": 960,
+              "name": "Vixtory",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1240,
+              "name_zh": "Vixtory"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_011",
+          "name": "挑戦！レッド玄人への道",
+          "sort_order": 11,
+          "total_notes": 2563,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 80
+              },
+              "gold": {
+                "operator": "<",
+                "value": 40
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 10
+              },
+              "gold": {
+                "operator": "<",
+                "value": 5
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 630,
+              "name": "天照",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 858,
+              "name_zh": "天照"
+            },
+            {
+              "order": 2,
+              "song_id": 442,
+              "name": "VERTeX",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 806,
+              "name_zh": "VERTeX"
+            },
+            {
+              "order": 3,
+              "song_id": 570,
+              "name": "ゴーストマスク",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 899,
+              "name_zh": "Ghost Mask"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_012",
+          "name": "挑戦！レッド名人への道",
+          "sort_order": 12,
+          "total_notes": 2742,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 100
+              },
+              "gold": {
+                "operator": "<",
+                "value": 50
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 16
+              },
+              "gold": {
+                "operator": "<",
+                "value": 8
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 164,
+              "name": "Got more raves?",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 824,
+              "name_zh": "Got more raves？"
+            },
+            {
+              "order": 2,
+              "song_id": 519,
+              "name": "秋竜 ～Shiuryu～",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1045,
+              "name_zh": "秋龙 ～Shiuryu～"
+            },
+            {
+              "order": 3,
+              "song_id": 218,
+              "name": "FLOWER",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 873,
+              "name_zh": "FLOWER"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_013",
+          "name": "挑戦！レッド超人への道",
+          "sort_order": 13,
+          "total_notes": 3033,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 140
+              },
+              "gold": {
+                "operator": "<",
+                "value": 70
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 20
+              },
+              "gold": {
+                "operator": "<",
+                "value": 10
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 553,
+              "name": "BLAZING VORTEX",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1208,
+              "name_zh": "BLAZING VORTEX"
+            },
+            {
+              "order": 2,
+              "song_id": 626,
+              "name": "美しく忙しきドナウ",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1038,
+              "name_zh": "美丽又急促的多瑙河"
+            },
+            {
+              "order": 3,
+              "song_id": 593,
+              "name": "冷凍庫CJ ～嗚呼面太鼓ブラザーズ～",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 787,
+              "name_zh": "冷冻库CJ ～呜呼面太鼓Brothers～"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_014",
+          "name": "烈伝！日本一決定戦2010",
+          "sort_order": 14,
+          "total_notes": 2145,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2010
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2389
+              }
+            },
+            {
+              "order": 3,
+              "type": "score",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 900000
+                },
+                {
+                  "operator": ">=",
+                  "value": 910000
+                },
+                {
+                  "operator": ">=",
+                  "value": 940000
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 930000
+                },
+                {
+                  "operator": ">=",
+                  "value": 940000
+                },
+                {
+                  "operator": ">=",
+                  "value": 970000
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 403,
+              "name": "らんぶる乱舞",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 640,
+              "name_zh": "RUMBLE乱舞"
+            },
+            {
+              "order": 2,
+              "song_id": 31,
+              "name": "亜空間遊泳ac12.5",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 777,
+              "name_zh": "亚空间游泳ac12.5"
+            },
+            {
+              "order": 3,
+              "song_id": 196,
+              "name": "夢色コースター",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 728,
+              "name_zh": "梦色Coaster"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_015",
+          "name": "烈伝！ドンだ～！日本一決定戦2011",
+          "sort_order": 15,
+          "total_notes": 2328,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2011
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2370
+              }
+            },
+            {
+              "order": 3,
+              "type": "score",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 950000
+                },
+                {
+                  "operator": ">=",
+                  "value": 940000
+                },
+                {
+                  "operator": ">=",
+                  "value": 930000
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 980000
+                },
+                {
+                  "operator": ">=",
+                  "value": 970000
+                },
+                {
+                  "operator": ">=",
+                  "value": 960000
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 394,
+              "name": "宇宙SAMURAI",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 765,
+              "name_zh": "宇宙SAMURAI"
+            },
+            {
+              "order": 2,
+              "song_id": 410,
+              "name": "天妖ノ舞",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 687,
+              "name_zh": "天妖ノ舞"
+            },
+            {
+              "order": 3,
+              "song_id": 73,
+              "name": "Black Rose Apostle",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 876,
+              "name_zh": "Black Rose Apostle"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_016",
+          "name": "烈伝！ドンだー！日本一決定戦 2013",
+          "sort_order": 16,
+          "total_notes": 2039,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2013
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2284
+              }
+            },
+            {
+              "order": 3,
+              "type": "score",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 960000
+                },
+                {
+                  "operator": ">=",
+                  "value": 950000
+                },
+                {
+                  "operator": ">=",
+                  "value": 940000
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 990000
+                },
+                {
+                  "operator": ">=",
+                  "value": 980000
+                },
+                {
+                  "operator": ">=",
+                  "value": 970000
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 22,
+              "name": "愛想笑い",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 600,
+              "name_zh": "AISO WARAI"
+            },
+            {
+              "order": 2,
+              "song_id": 12,
+              "name": "夜櫻ブレヰダアズ",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 567,
+              "name_zh": "夜樱 Bladerz"
+            },
+            {
+              "order": 3,
+              "song_id": 128,
+              "name": "D's Adventure Note",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 872,
+              "name_zh": "D's Adventure Note"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_017",
+          "name": "烈伝！ドンだー！世界一決定戦2016",
+          "sort_order": 17,
+          "total_notes": 2160,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2016
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2408
+              }
+            },
+            {
+              "order": 3,
+              "type": "score",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 970000
+                },
+                {
+                  "operator": ">=",
+                  "value": 960000
+                },
+                {
+                  "operator": ">=",
+                  "value": 950000
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 990000
+                },
+                {
+                  "operator": ">=",
+                  "value": 980000
+                },
+                {
+                  "operator": ">=",
+                  "value": 970000
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 560,
+              "name": "Choco Chiptune.",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 640,
+              "name_zh": "Choco Chiptune."
+            },
+            {
+              "order": 2,
+              "song_id": 566,
+              "name": "凛",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 672,
+              "name_zh": "凛"
+            },
+            {
+              "order": 3,
+              "song_id": 574,
+              "name": "SstTAarR*",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 848,
+              "name_zh": "SstTAarR*"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_018",
+          "name": "軌跡！ニジイロ2020 セレクション",
+          "sort_order": 18,
+          "total_notes": 2062,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1900
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1960
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 15
+              },
+              "gold": {
+                "operator": "<",
+                "value": 7
+              }
+            },
+            {
+              "order": 4,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2020
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2765
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 979,
+              "name": "轟け！太鼓の達人",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 765,
+              "name_zh": "震天动地！太鼓之达人"
+            },
+            {
+              "order": 2,
+              "song_id": 942,
+              "name": "限界クリエイター応援歌",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 649,
+              "name_zh": "极限创作者加油歌"
+            },
+            {
+              "order": 3,
+              "song_id": 938,
+              "name": "零の交響曲",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 648,
+              "name_zh": "零之交响曲"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_019",
+          "name": "軌跡！グリーンVer. セレクション",
+          "sort_order": 19,
+          "total_notes": 2655,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 170
+              },
+              "gold": {
+                "operator": "<",
+                "value": 130
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 15
+              },
+              "gold": {
+                "operator": "<",
+                "value": 7
+              }
+            },
+            {
+              "order": 4,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2019
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2876
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 819,
+              "name": "カラフルボイス",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 876,
+              "name_zh": "Colorful Voice"
+            },
+            {
+              "order": 2,
+              "song_id": 798,
+              "name": "あの日出会えたキセキ",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 903,
+              "name_zh": "Miracle Meeting"
+            },
+            {
+              "order": 3,
+              "song_id": 879,
+              "name": "タイコロール",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 876,
+              "name_zh": "Taiko Roll"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_020",
+          "name": "挑戦！ブルー玄人への道",
+          "sort_order": 20,
+          "total_notes": 2284,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 100
+              },
+              "gold": {
+                "operator": "<",
+                "value": 50
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 10
+              },
+              "gold": {
+                "operator": "<",
+                "value": 5
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 574,
+              "name": "SstTAarR*",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 848,
+              "name_zh": "SstTAarR*"
+            },
+            {
+              "order": 2,
+              "song_id": 427,
+              "name": "God Ray",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 777,
+              "name_zh": "God Ray"
+            },
+            {
+              "order": 3,
+              "song_id": 762,
+              "name": "Toon Town's Toys' Tune",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 659,
+              "name_zh": "Toon Town's Toys' Tune"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_021",
+          "name": "挑戦！ブルー名人への道",
+          "sort_order": 21,
+          "total_notes": 2500,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 200
+              },
+              "gold": {
+                "operator": "<",
+                "value": 100
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 20
+              },
+              "gold": {
+                "operator": "<",
+                "value": 10
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 575,
+              "name": "ココロボ",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 620,
+              "name_zh": "KOKOROBO"
+            },
+            {
+              "order": 2,
+              "song_id": 763,
+              "name": "まるくてはやくてすさまじいリズム",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 978,
+              "name_zh": "round and fast and crazy rhythm"
+            },
+            {
+              "order": 3,
+              "song_id": 761,
+              "name": "EterNal Ring",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 902,
+              "name_zh": "EterNal Ring"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_022",
+          "name": "挑戦！ブルー超人への道",
+          "sort_order": 22,
+          "total_notes": 2886,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 300
+              },
+              "gold": {
+                "operator": "<",
+                "value": 150
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 30
+              },
+              "gold": {
+                "operator": "<",
+                "value": 15
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 628,
+              "name": "束ね糸",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 976,
+              "name_zh": "TABANEITO"
+            },
+            {
+              "order": 2,
+              "song_id": 110,
+              "name": "DEBSTEP!",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 888,
+              "name_zh": "DEBSTEP!"
+            },
+            {
+              "order": 3,
+              "song_id": 764,
+              "name": "Coquette",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 1022,
+              "name_zh": "Coquette"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_023",
+          "name": "外伝！ニジイロ2023五段(裏)",
+          "sort_order": 23,
+          "total_notes": 2343,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1874
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1944
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 25
+              },
+              "gold": {
+                "operator": "<",
+                "value": 12
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 76
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 85
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 453,
+              "name": "紅",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 999,
+              "name_zh": "红"
+            },
+            {
+              "order": 2,
+              "song_id": 891,
+              "name": "カッティアワールの宝剣",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 637,
+              "name_zh": "The Cutlass of Kathiawar"
+            },
+            {
+              "order": 3,
+              "song_id": 688,
+              "name": "星屑とリニアと僕",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 707,
+              "name_zh": "星尘与利尼亚与我"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_024",
+          "name": "外伝！ニジイロ2023十段(裏)",
+          "sort_order": 24,
+          "total_notes": 2555,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": "<",
+                  "value": 15
+                },
+                {
+                  "operator": "<",
+                  "value": 15
+                },
+                {
+                  "operator": "<",
+                  "value": 25
+                }
+              ],
+              "gold": [
+                {
+                  "operator": "<",
+                  "value": 8
+                },
+                {
+                  "operator": "<",
+                  "value": 8
+                },
+                {
+                  "operator": "<",
+                  "value": 13
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 6
+              },
+              "gold": {
+                "operator": "<",
+                "value": 3
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 133
+                },
+                {
+                  "operator": ">=",
+                  "value": 7
+                },
+                {
+                  "operator": ">=",
+                  "value": 0
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 145
+                },
+                {
+                  "operator": ">=",
+                  "value": 8
+                },
+                {
+                  "operator": ">=",
+                  "value": 0
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 967,
+              "name": "Hand Over (Prod. TEMPLIME)",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 651,
+              "name_zh": "Hand Over (Prod. TEMPLIME)"
+            },
+            {
+              "order": 2,
+              "song_id": 867,
+              "name": "うちゅうひこうし冒険譚",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 797,
+              "name_zh": "Uchuhikoushi Boukentan"
+            },
+            {
+              "order": 3,
+              "song_id": 1100,
+              "name": "Kill My Fortune",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1107,
+              "name_zh": "Kill My Fortune"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_025",
+          "name": "どんちゃん学園の課外授業！【粋】",
+          "sort_order": 25,
+          "total_notes": 1198,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.98
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 30
+              },
+              "gold": {
+                "operator": "<",
+                "value": 20
+              }
+            },
+            {
+              "order": 3,
+              "type": "score",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2400000
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2550000
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 651,
+              "name": "合唱スタボーフェ！",
+              "difficulty": 3,
+              "stars": 6,
+              "notes": 428,
+              "name_zh": "合唱庆节！"
+            },
+            {
+              "order": 2,
+              "song_id": 62,
+              "name": "ゆれるプリーツ実行委員",
+              "difficulty": 3,
+              "stars": 7,
+              "notes": 319,
+              "name_zh": "YURERU PLEAT JIKKOUIIN"
+            },
+            {
+              "order": 3,
+              "song_id": 677,
+              "name": "そつおめしき2ばん",
+              "difficulty": 3,
+              "stars": 7,
+              "notes": 451,
+              "name_zh": "恭喜毕业典礼・2BAN"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_026",
+          "name": "どんちゃん学園の課外授業！【雅】",
+          "sort_order": 26,
+          "total_notes": 2008,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 24
+              },
+              "gold": {
+                "operator": "<",
+                "value": 12
+              }
+            },
+            {
+              "order": 3,
+              "type": "score",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2550000
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2700000
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 989,
+              "name": "あまてらすJK",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 702,
+              "name_zh": "Amaterasu JK"
+            },
+            {
+              "order": 2,
+              "song_id": 565,
+              "name": "ほうかご☆マジシャン",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 585,
+              "name_zh": "放学後☆魔术师"
+            },
+            {
+              "order": 3,
+              "song_id": 488,
+              "name": "シューガク トラベラーズ",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 721,
+              "name_zh": "SHUUGAKU TRAVELERS"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_027",
+          "name": "どんちゃん学園の課外授業！【極】",
+          "sort_order": 27,
+          "total_notes": 2450,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 31
+              },
+              "gold": {
+                "operator": "<",
+                "value": 14
+              }
+            },
+            {
+              "order": 3,
+              "type": "score",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2850000
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2910000
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 724,
+              "name": "よーいドン！",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 777,
+              "name_zh": "预～备砰！"
+            },
+            {
+              "order": 2,
+              "song_id": 388,
+              "name": "そつおめしき",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 797,
+              "name_zh": "恭喜毕业典礼"
+            },
+            {
+              "order": 3,
+              "song_id": 1081,
+              "name": "めためた☆ゆにば～すっ！",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 876,
+              "name_zh": "METAMETA☆Universe!"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_028",
+          "name": "襲来！555コンボ！",
+          "sort_order": 28,
+          "total_notes": 1665,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.98
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 0
+              }
+            },
+            {
+              "order": 2,
+              "type": "combo",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 444
+                },
+                {
+                  "operator": ">=",
+                  "value": 444
+                },
+                {
+                  "operator": ">=",
+                  "value": 444
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 555
+                },
+                {
+                  "operator": ">=",
+                  "value": 555
+                },
+                {
+                  "operator": ">=",
+                  "value": 555
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 207,
+              "name": "オールナイトdeインデナイ",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 555,
+              "name_zh": "All Night de INDENAI"
+            },
+            {
+              "order": 2,
+              "song_id": 481,
+              "name": "shiny smile",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 555,
+              "name_zh": "shiny smile"
+            },
+            {
+              "order": 3,
+              "song_id": 323,
+              "name": "Phoenix",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 555,
+              "name_zh": "Phoenix"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_029",
+          "name": "襲来！666コンボ！",
+          "sort_order": 29,
+          "total_notes": 1998,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 0
+              }
+            },
+            {
+              "order": 2,
+              "type": "combo",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 555
+                },
+                {
+                  "operator": ">=",
+                  "value": 555
+                },
+                {
+                  "operator": ">=",
+                  "value": 555
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 666
+                },
+                {
+                  "operator": ">=",
+                  "value": 666
+                },
+                {
+                  "operator": ">=",
+                  "value": 666
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 496,
+              "name": "深緋の心臓 -SCARLET HEART-",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 666,
+              "name_zh": "深绯之心脏 -SCARLET HEART-"
+            },
+            {
+              "order": 2,
+              "song_id": 447,
+              "name": "White Rose Insanity",
+              "difficulty": 5,
+              "stars": 8,
+              "notes": 666,
+              "name_zh": "White Rose Insanity"
+            },
+            {
+              "order": 3,
+              "song_id": 391,
+              "name": "SORA‐Ⅵ 火ノ鳥",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 666,
+              "name_zh": "SORA-VI 火ノ鸟"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_030",
+          "name": "襲来！777コンボ！",
+          "sort_order": 30,
+          "total_notes": 2331,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 0
+              }
+            },
+            {
+              "order": 2,
+              "type": "combo",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 666
+                },
+                {
+                  "operator": ">=",
+                  "value": 666
+                },
+                {
+                  "operator": ">=",
+                  "value": 666
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 777
+                },
+                {
+                  "operator": ">=",
+                  "value": 777
+                },
+                {
+                  "operator": ">=",
+                  "value": 777
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 72,
+              "name": "The Carnivorous Carnival",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 777,
+              "name_zh": "The Carnivorous Carnival"
+            },
+            {
+              "order": 2,
+              "song_id": 649,
+              "name": "毒LOＣＡＮdy♡",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 777,
+              "name_zh": "毒LOＣＡＮdy♡"
+            },
+            {
+              "order": 3,
+              "song_id": 386,
+              "name": "恋文2000",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 777,
+              "name_zh": "情书2000"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_031",
+          "name": "挑戦！1800連打！！【雅】",
+          "sort_order": 31,
+          "total_notes": 2065,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "roll",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1800
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2100
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 13,
+              "name": "ドキドキ胸きゅん おまつりタイム",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 652,
+              "name_zh": "心动不已的祭典时间"
+            },
+            {
+              "order": 2,
+              "song_id": 938,
+              "name": "零の交響曲",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 648,
+              "name_zh": "零之交响曲"
+            },
+            {
+              "order": 3,
+              "song_id": 713,
+              "name": "SHOGYO MUJO",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 765,
+              "name_zh": null
+            }
+          ]
+        },
+        {
+          "id": "gaiden_032",
+          "name": "挑戦！2500連打！！【極】",
+          "sort_order": 32,
+          "total_notes": 2065,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "roll",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2500
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2900
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 13,
+              "name": "ドキドキ胸きゅん おまつりタイム",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 652,
+              "name_zh": "心动不已的祭典时间"
+            },
+            {
+              "order": 2,
+              "song_id": 938,
+              "name": "零の交響曲",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 648,
+              "name_zh": "零之交响曲"
+            },
+            {
+              "order": 3,
+              "song_id": 713,
+              "name": "SHOGYO MUJO",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 765,
+              "name_zh": null
+            }
+          ]
+        },
+        {
+          "id": "gaiden_033",
+          "name": "あっぱれ三代目からの挑戦状#1【粋】",
+          "sort_order": 33,
+          "total_notes": 1396,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 30
+              },
+              "gold": {
+                "operator": "<",
+                "value": 15
+              }
+            },
+            {
+              "order": 3,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 43
+                },
+                {
+                  "operator": ">=",
+                  "value": 36
+                },
+                {
+                  "operator": ">=",
+                  "value": 63
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 47
+                },
+                {
+                  "operator": ">=",
+                  "value": 39
+                },
+                {
+                  "operator": ">=",
+                  "value": 70
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 84,
+              "name": "カルメン 組曲一番終曲",
+              "difficulty": 3,
+              "stars": 5,
+              "notes": 388,
+              "name_zh": "卡门第一组曲 斗牛士之歌"
+            },
+            {
+              "order": 2,
+              "song_id": 156,
+              "name": "KAGEKIYO",
+              "difficulty": 3,
+              "stars": 7,
+              "notes": 616,
+              "name_zh": "KAGEKIYO"
+            },
+            {
+              "order": 3,
+              "song_id": 264,
+              "name": "メカデス。",
+              "difficulty": 3,
+              "stars": 7,
+              "notes": 392,
+              "name_zh": "Mecha DESU."
+            }
+          ]
+        },
+        {
+          "id": "gaiden_034",
+          "name": "あっぱれ三代目からの挑戦状#1【雅】",
+          "sort_order": 34,
+          "total_notes": 1766,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 20
+              },
+              "gold": {
+                "operator": "<",
+                "value": 10
+              }
+            },
+            {
+              "order": 3,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 36
+                },
+                {
+                  "operator": ">=",
+                  "value": 99
+                },
+                {
+                  "operator": ">=",
+                  "value": 43
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 40
+                },
+                {
+                  "operator": ">=",
+                  "value": 110
+                },
+                {
+                  "operator": ">=",
+                  "value": 47
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 84,
+              "name": "カルメン 組曲一番終曲",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 518,
+              "name_zh": "卡门第一组曲 斗牛士之歌"
+            },
+            {
+              "order": 2,
+              "song_id": 264,
+              "name": "メカデス。",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 483,
+              "name_zh": "Mecha DESU."
+            },
+            {
+              "order": 3,
+              "song_id": 156,
+              "name": "KAGEKIYO",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 765,
+              "name_zh": "KAGEKIYO"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_035",
+          "name": "あっぱれ三代目からの挑戦状#1【極】",
+          "sort_order": 35,
+          "total_notes": 2955,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 50
+              },
+              "gold": {
+                "operator": "<",
+                "value": 25
+              }
+            },
+            {
+              "order": 3,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 43
+                },
+                {
+                  "operator": ">=",
+                  "value": 60
+                },
+                {
+                  "operator": ">=",
+                  "value": 26
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 47
+                },
+                {
+                  "operator": ">=",
+                  "value": 66
+                },
+                {
+                  "operator": ">=",
+                  "value": 28
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 156,
+              "name": "KAGEKIYO",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 999,
+              "name_zh": "KAGEKIYO"
+            },
+            {
+              "order": 2,
+              "song_id": 264,
+              "name": "メカデス。",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 999,
+              "name_zh": "Mecha DESU."
+            },
+            {
+              "order": 3,
+              "song_id": 84,
+              "name": "カルメン 組曲一番終曲",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 957,
+              "name_zh": "卡门第一组曲 斗牛士之歌"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_036",
+          "name": "ドコドン！ボーカル曲祭り#1",
+          "sort_order": 36,
+          "total_notes": 1631,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.98
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2165
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2278
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1001,
+              "name": "なんどでも笑おう",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 515,
+              "name_zh": "Nandodemo Waraou"
+            },
+            {
+              "order": 2,
+              "song_id": 15,
+              "name": "竜と黒炎の姫君",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 569,
+              "name_zh": "龙与黑炎的公主"
+            },
+            {
+              "order": 3,
+              "song_id": 1014,
+              "name": "Hold me tight",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 547,
+              "name_zh": "Hold me tight"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_037",
+          "name": "ドコドン！ボーカル曲祭り#2",
+          "sort_order": 37,
+          "total_notes": 2106,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2551
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2679
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 63,
+              "name": "ブルちゃんのおや2",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 575,
+              "name_zh": "BURU-TARO的点心２"
+            },
+            {
+              "order": 2,
+              "song_id": 1069,
+              "name": "Solitude Star",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 766,
+              "name_zh": "Solitude Star"
+            },
+            {
+              "order": 3,
+              "song_id": 351,
+              "name": "EDY -エレクトリカルダンシングヨガ-",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 765,
+              "name_zh": "EDY -Electrical Dancing Yoga-"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_038",
+          "name": "えむけぴからの挑戦状#1",
+          "sort_order": 38,
+          "total_notes": 1530,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 330
+              },
+              "gold": {
+                "operator": "<",
+                "value": 289
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 20
+              },
+              "gold": {
+                "operator": "<",
+                "value": 10
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 95
+                },
+                {
+                  "operator": ">=",
+                  "value": 104
+                },
+                {
+                  "operator": ">=",
+                  "value": 251
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 105
+                },
+                {
+                  "operator": ">=",
+                  "value": 115
+                },
+                {
+                  "operator": ">=",
+                  "value": 278
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 350,
+              "name": "Saika",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 593,
+              "name_zh": "Saika"
+            },
+            {
+              "order": 2,
+              "song_id": 776,
+              "name": "GO GET'EM！",
+              "difficulty": 3,
+              "stars": 8,
+              "notes": 384,
+              "name_zh": "GO GET'EM!"
+            },
+            {
+              "order": 3,
+              "song_id": 716,
+              "name": "彼は誰時の誘惑",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 553,
+              "name_zh": "KAHATAREDOKI NO YUUWAKU"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_039",
+          "name": "えむけぴからの挑戦状#2",
+          "sort_order": 39,
+          "total_notes": 2333,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 250
+              },
+              "gold": {
+                "operator": "<",
+                "value": 189
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 13
+              },
+              "gold": {
+                "operator": "<",
+                "value": 5
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 5
+                },
+                {
+                  "operator": ">=",
+                  "value": 265
+                },
+                {
+                  "operator": ">=",
+                  "value": 142
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 6
+                },
+                {
+                  "operator": ">=",
+                  "value": 294
+                },
+                {
+                  "operator": ">=",
+                  "value": 157
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 911,
+              "name": "神様の言うとおりに",
+              "difficulty": 5,
+              "stars": 9,
+              "notes": 833,
+              "name_zh": "神様の言うとおりに"
+            },
+            {
+              "order": 2,
+              "song_id": 845,
+              "name": "Dreadnought",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 632,
+              "name_zh": "Dreadnought"
+            },
+            {
+              "order": 3,
+              "song_id": 715,
+              "name": "Blessed Bouquet Buskers",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 868,
+              "name_zh": "Blessed Bouquet Buskers"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_040",
+          "name": "すえPからの挑戦状#1",
+          "sort_order": 40,
+          "total_notes": 2462,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": "<",
+                  "value": 78
+                },
+                {
+                  "operator": "<",
+                  "value": 73
+                },
+                {
+                  "operator": "<",
+                  "value": 94
+                }
+              ],
+              "gold": [
+                {
+                  "operator": "<",
+                  "value": 30
+                },
+                {
+                  "operator": "<",
+                  "value": 29
+                },
+                {
+                  "operator": "<",
+                  "value": 44
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": "<",
+                  "value": 12
+                },
+                {
+                  "operator": "<",
+                  "value": 11
+                },
+                {
+                  "operator": "<",
+                  "value": 15
+                }
+              ],
+              "gold": [
+                {
+                  "operator": "<",
+                  "value": 2
+                },
+                {
+                  "operator": "<",
+                  "value": 2
+                },
+                {
+                  "operator": "<",
+                  "value": 1
+                }
+              ]
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 310
+                },
+                {
+                  "operator": ">=",
+                  "value": 32
+                },
+                {
+                  "operator": ">=",
+                  "value": 171
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 324
+                },
+                {
+                  "operator": ">=",
+                  "value": 35
+                },
+                {
+                  "operator": ">=",
+                  "value": 179
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 898,
+              "name": "God knows...",
+              "difficulty": 5,
+              "stars": 9,
+              "notes": 938,
+              "name_zh": "God knows..."
+            },
+            {
+              "order": 2,
+              "song_id": 939,
+              "name": "いっそこのままで",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 765,
+              "name_zh": "不如就这样继续下去"
+            },
+            {
+              "order": 3,
+              "song_id": 914,
+              "name": "シンクロニカ・エアライン",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 759,
+              "name_zh": "Synchronica Airline"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_041",
+          "name": "目指せ！280万点突破！【粋】",
+          "sort_order": 41,
+          "total_notes": 1567,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.98
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "score",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 920000
+                },
+                {
+                  "operator": ">=",
+                  "value": 920000
+                },
+                {
+                  "operator": ">=",
+                  "value": 920000
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 960000
+                },
+                {
+                  "operator": ">=",
+                  "value": 960000
+                },
+                {
+                  "operator": ">=",
+                  "value": 960000
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 84,
+              "name": "カルメン 組曲一番終曲",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 518,
+              "name_zh": "卡门第一组曲 斗牛士之歌"
+            },
+            {
+              "order": 2,
+              "song_id": 1111,
+              "name": "怪物",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 466,
+              "name_zh": "怪物"
+            },
+            {
+              "order": 3,
+              "song_id": 140,
+              "name": "+♂(プラス男子)",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 583,
+              "name_zh": "+♂(プラス男子)"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_042",
+          "name": "目指せ！285万点突破！【雅】",
+          "sort_order": 42,
+          "total_notes": 2124,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.98
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "score",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 940000
+                },
+                {
+                  "operator": ">=",
+                  "value": 940000
+                },
+                {
+                  "operator": ">=",
+                  "value": 940000
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 970000
+                },
+                {
+                  "operator": ">=",
+                  "value": 970000
+                },
+                {
+                  "operator": ">=",
+                  "value": 970000
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1004,
+              "name": "廻廻奇譚",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 482,
+              "name_zh": "廻廻奇譚"
+            },
+            {
+              "order": 2,
+              "song_id": 398,
+              "name": "カナデア",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 643,
+              "name_zh": "KANADEA"
+            },
+            {
+              "order": 3,
+              "song_id": 453,
+              "name": "紅",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 999,
+              "name_zh": "红"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_043",
+          "name": "目指せ！290万点突破！【極】",
+          "sort_order": 43,
+          "total_notes": 2417,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "score",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 960000
+                },
+                {
+                  "operator": ">=",
+                  "value": 960000
+                },
+                {
+                  "operator": ">=",
+                  "value": 960000
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 980000
+                },
+                {
+                  "operator": ">=",
+                  "value": 980000
+                },
+                {
+                  "operator": ">=",
+                  "value": 980000
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 368,
+              "name": "さんぽ",
+              "difficulty": 5,
+              "stars": 9,
+              "notes": 816,
+              "name_zh": "散步"
+            },
+            {
+              "order": 2,
+              "song_id": 100,
+              "name": "迅風丸",
+              "difficulty": 5,
+              "stars": 9,
+              "notes": 659,
+              "name_zh": "迅风丸"
+            },
+            {
+              "order": 3,
+              "song_id": 248,
+              "name": "LOVE戦!!",
+              "difficulty": 5,
+              "stars": 9,
+              "notes": 942,
+              "name_zh": "LOVE战!!"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_044",
+          "name": "ハッピー？ハロウィン！#2022【粋】",
+          "sort_order": 44,
+          "total_notes": 1157,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.96
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 0.98
+              }
+            },
+            {
+              "order": 2,
+              "type": "combo",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 116
+                },
+                {
+                  "operator": ">=",
+                  "value": 120
+                },
+                {
+                  "operator": ">=",
+                  "value": 147
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 154
+                },
+                {
+                  "operator": ">=",
+                  "value": 160
+                },
+                {
+                  "operator": ">=",
+                  "value": 189
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1361
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1408
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 182,
+              "name": "ハロー！ ハロウィン",
+              "difficulty": 3,
+              "stars": 6,
+              "notes": 387,
+              "name_zh": "Hello! Halloween"
+            },
+            {
+              "order": 2,
+              "song_id": 322,
+              "name": "ミーナのおやしき",
+              "difficulty": 3,
+              "stars": 7,
+              "notes": 402,
+              "name_zh": "MIINA NO OYASHIKI"
+            },
+            {
+              "order": 3,
+              "song_id": 1133,
+              "name": "Doppelgangers",
+              "difficulty": 3,
+              "stars": 6,
+              "notes": 368,
+              "name_zh": "Doppelgangers"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_045",
+          "name": "ハッピー？ハロウィン！#2022【雅】",
+          "sort_order": 45,
+          "total_notes": 1817,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 363
+              },
+              "gold": {
+                "operator": "<",
+                "value": 307
+              }
+            },
+            {
+              "order": 3,
+              "type": "combo",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 789
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 907
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 127
+                },
+                {
+                  "operator": ">=",
+                  "value": 103
+                },
+                {
+                  "operator": ">=",
+                  "value": 159
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 135
+                },
+                {
+                  "operator": ">=",
+                  "value": 112
+                },
+                {
+                  "operator": ">=",
+                  "value": 173
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 182,
+              "name": "ハロー！ ハロウィン",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 576,
+              "name_zh": "Hello! Halloween"
+            },
+            {
+              "order": 2,
+              "song_id": 322,
+              "name": "ミーナのおやしき",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 607,
+              "name_zh": "MIINA NO OYASHIKI"
+            },
+            {
+              "order": 3,
+              "song_id": 1133,
+              "name": "Doppelgangers",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 634,
+              "name_zh": "Doppelgangers"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_046",
+          "name": "ハッピー？ハロウィン！#2022【極】",
+          "sort_order": 46,
+          "total_notes": 2112,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 84
+              },
+              "gold": {
+                "operator": "<",
+                "value": 62
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": "<",
+                  "value": 2
+                },
+                {
+                  "operator": "<",
+                  "value": 2
+                },
+                {
+                  "operator": "<",
+                  "value": 10
+                }
+              ],
+              "gold": [
+                {
+                  "operator": "<",
+                  "value": 1
+                },
+                {
+                  "operator": "<",
+                  "value": 1
+                },
+                {
+                  "operator": "<",
+                  "value": 5
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 182,
+              "name": "ハロー！ ハロウィン",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 576,
+              "name_zh": "Hello! Halloween"
+            },
+            {
+              "order": 2,
+              "song_id": 322,
+              "name": "ミーナのおやしき",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 607,
+              "name_zh": "MIINA NO OYASHIKI"
+            },
+            {
+              "order": 3,
+              "song_id": 1133,
+              "name": "Doppelgangers",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 929,
+              "name_zh": "Doppelgangers"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_047",
+          "name": "挑戦！グリーン玄人への道",
+          "sort_order": 47,
+          "total_notes": 2755,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 100
+              },
+              "gold": {
+                "operator": "<",
+                "value": 50
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 10
+              },
+              "gold": {
+                "operator": "<",
+                "value": 5
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 171,
+              "name": "重金属フューギティブ",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 653,
+              "name_zh": "重金属Fugitive"
+            },
+            {
+              "order": 2,
+              "song_id": 121,
+              "name": "Doom Noiz",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 961,
+              "name_zh": "Doom Noiz"
+            },
+            {
+              "order": 3,
+              "song_id": 851,
+              "name": "気焔万丈神楽",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 1141,
+              "name_zh": "气焰万丈神乐"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_048",
+          "name": "挑戦！グリーン名人への道",
+          "sort_order": 48,
+          "total_notes": 2704,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 120
+              },
+              "gold": {
+                "operator": "<",
+                "value": 60
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 12
+              },
+              "gold": {
+                "operator": "<",
+                "value": 6
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 94,
+              "name": "弩蚊怒夏",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 1000,
+              "name_zh": "弩蚊怒夏"
+            },
+            {
+              "order": 2,
+              "song_id": 722,
+              "name": "愛と浄罪の森",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 832,
+              "name_zh": "AI TO JOUZAI NO MORI"
+            },
+            {
+              "order": 3,
+              "song_id": 850,
+              "name": "コネクトカラーズ",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 872,
+              "name_zh": "Connect Colours"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_049",
+          "name": "挑戦！グリーン超人への道",
+          "sort_order": 49,
+          "total_notes": 2921,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 200
+              },
+              "gold": {
+                "operator": "<",
+                "value": 90
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 22
+              },
+              "gold": {
+                "operator": "<",
+                "value": 12
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 745,
+              "name": "プチポチ",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 877,
+              "name_zh": "小狗波奇"
+            },
+            {
+              "order": 2,
+              "song_id": 760,
+              "name": "青天の黎明",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 1000,
+              "name_zh": "青天之黎明"
+            },
+            {
+              "order": 3,
+              "song_id": 816,
+              "name": "星屑ストラック",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1044,
+              "name_zh": "Struck Stardust"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_050",
+          "name": "襲来！765コンボ！【粋】",
+          "sort_order": 50,
+          "total_notes": 2295,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "combo",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 612
+                },
+                {
+                  "operator": ">=",
+                  "value": 612
+                },
+                {
+                  "operator": ">=",
+                  "value": 612
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 765
+                },
+                {
+                  "operator": ">=",
+                  "value": 765
+                },
+                {
+                  "operator": ">=",
+                  "value": 765
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 433,
+              "name": "エンジェル ドリーム",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 765,
+              "name_zh": "エンジェル ドリーム"
+            },
+            {
+              "order": 2,
+              "song_id": 274,
+              "name": "蓄勢",
+              "difficulty": 5,
+              "stars": 8,
+              "notes": 765,
+              "name_zh": "蓄势"
+            },
+            {
+              "order": 3,
+              "song_id": 56,
+              "name": "Blue Rose Ruin",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 765,
+              "name_zh": "Blue Rose Ruin"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_051",
+          "name": "襲来！765コンボ！【雅】",
+          "sort_order": 51,
+          "total_notes": 2295,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "combo",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 631
+                },
+                {
+                  "operator": ">=",
+                  "value": 631
+                },
+                {
+                  "operator": ">=",
+                  "value": 631
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 765
+                },
+                {
+                  "operator": ">=",
+                  "value": 765
+                },
+                {
+                  "operator": ">=",
+                  "value": 765
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 817,
+              "name": "Dragoon",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 765,
+              "name_zh": "Dragoon"
+            },
+            {
+              "order": 2,
+              "song_id": 346,
+              "name": "Red Rose Evangel",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 765,
+              "name_zh": "Red Rose Evangel"
+            },
+            {
+              "order": 3,
+              "song_id": 375,
+              "name": "Shiny Kung-fu Revival",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 765,
+              "name_zh": "Shiny Kung-fu Revival"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_052",
+          "name": "襲来！765コンボ！【極】",
+          "sort_order": 52,
+          "total_notes": 2295,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "combo",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 650
+                },
+                {
+                  "operator": ">=",
+                  "value": 650
+                },
+                {
+                  "operator": ">=",
+                  "value": 650
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 765
+                },
+                {
+                  "operator": ">=",
+                  "value": 765
+                },
+                {
+                  "operator": ">=",
+                  "value": 765
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 288,
+              "name": "mint tears",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 765,
+              "name_zh": "mint tears"
+            },
+            {
+              "order": 2,
+              "song_id": 361,
+              "name": "Venomous",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 765,
+              "name_zh": "Venomous"
+            },
+            {
+              "order": 3,
+              "song_id": 392,
+              "name": "十露盤2000",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 765,
+              "name_zh": "珠算2000"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_053",
+          "name": "マスブ・チュジー生誕記念#2022【粋】",
+          "sort_order": 53,
+          "total_notes": 1939,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.76
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 0.98
+              }
+            },
+            {
+              "order": 2,
+              "type": "score",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1976726
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2230000
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 32,
+              "name": "アレキサンダーのテーマ",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 644,
+              "name_zh": "亚历山大 主题曲"
+            },
+            {
+              "order": 2,
+              "song_id": 1067,
+              "name": "Agent Hustle & Dr. Hassle",
+              "difficulty": 5,
+              "stars": 9,
+              "notes": 518,
+              "name_zh": "Agent Hustle & Dr. Hassle"
+            },
+            {
+              "order": 3,
+              "song_id": 31,
+              "name": "亜空間遊泳ac12.5",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 777,
+              "name_zh": "亚空间游泳ac12.5"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_054",
+          "name": "マスブ・チュジー生誕記念#2022【雅】",
+          "sort_order": 54,
+          "total_notes": 1939,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.98
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 726
+              },
+              "gold": {
+                "operator": "<",
+                "value": 511
+              }
+            },
+            {
+              "order": 3,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1976
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2000
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 32,
+              "name": "アレキサンダーのテーマ",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 644,
+              "name_zh": "亚历山大 主题曲"
+            },
+            {
+              "order": 2,
+              "song_id": 1067,
+              "name": "Agent Hustle & Dr. Hassle",
+              "difficulty": 5,
+              "stars": 9,
+              "notes": 518,
+              "name_zh": "Agent Hustle & Dr. Hassle"
+            },
+            {
+              "order": 3,
+              "song_id": 31,
+              "name": "亜空間遊泳ac12.5",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 777,
+              "name_zh": "亚空间游泳ac12.5"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_055",
+          "name": "マスブ・チュジー生誕記念#2022【極】",
+          "sort_order": 55,
+          "total_notes": 1939,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.98
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 70
+              },
+              "gold": {
+                "operator": "<",
+                "value": 26
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 26
+              },
+              "gold": {
+                "operator": "<",
+                "value": 7
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 70
+                },
+                {
+                  "operator": ">=",
+                  "value": 20
+                },
+                {
+                  "operator": ">=",
+                  "value": 60
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 70
+                },
+                {
+                  "operator": ">=",
+                  "value": 20
+                },
+                {
+                  "operator": ">=",
+                  "value": 60
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 32,
+              "name": "アレキサンダーのテーマ",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 644,
+              "name_zh": "亚历山大 主题曲"
+            },
+            {
+              "order": 2,
+              "song_id": 1067,
+              "name": "Agent Hustle & Dr. Hassle",
+              "difficulty": 5,
+              "stars": 9,
+              "notes": 518,
+              "name_zh": "Agent Hustle & Dr. Hassle"
+            },
+            {
+              "order": 3,
+              "song_id": 31,
+              "name": "亜空間遊泳ac12.5",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 777,
+              "name_zh": "亚空间游泳ac12.5"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_056",
+          "name": "Vバージョンからの挑戦状#1【粋】",
+          "sort_order": 56,
+          "total_notes": 2036,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.98
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "combo",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 170
+                },
+                {
+                  "operator": ">=",
+                  "value": 239
+                },
+                {
+                  "operator": ">=",
+                  "value": 201
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 226
+                },
+                {
+                  "operator": ">=",
+                  "value": 318
+                },
+                {
+                  "operator": ">=",
+                  "value": 268
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 687,
+              "name": "黒神クロニクル",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 567,
+              "name_zh": "KOKUSHIN CHRONICLE"
+            },
+            {
+              "order": 2,
+              "song_id": 553,
+              "name": "BLAZING VORTEX",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 797,
+              "name_zh": "BLAZING VORTEX"
+            },
+            {
+              "order": 3,
+              "song_id": 500,
+              "name": "希望へのメロディー",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 672,
+              "name_zh": "迈向希望的旋律"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_057",
+          "name": "Vバージョンからの挑戦状#1【雅】",
+          "sort_order": 57,
+          "total_notes": 2036,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "score",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 2820000
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 2880000
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 687,
+              "name": "黒神クロニクル",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 567,
+              "name_zh": "KOKUSHIN CHRONICLE"
+            },
+            {
+              "order": 2,
+              "song_id": 553,
+              "name": "BLAZING VORTEX",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 797,
+              "name_zh": "BLAZING VORTEX"
+            },
+            {
+              "order": 3,
+              "song_id": 500,
+              "name": "希望へのメロディー",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 672,
+              "name_zh": "迈向希望的旋律"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_058",
+          "name": "Vバージョンからの挑戦状#1【極】",
+          "sort_order": 58,
+          "total_notes": 2295,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "score",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 990000
+                },
+                {
+                  "operator": ">=",
+                  "value": 995000
+                },
+                {
+                  "operator": ">=",
+                  "value": 975000
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 1000000
+                },
+                {
+                  "operator": ">=",
+                  "value": 1005000
+                },
+                {
+                  "operator": ">=",
+                  "value": 990000
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 687,
+              "name": "黒神クロニクル",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 567,
+              "name_zh": "KOKUSHIN CHRONICLE"
+            },
+            {
+              "order": 2,
+              "song_id": 553,
+              "name": "BLAZING VORTEX",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 797,
+              "name_zh": "BLAZING VORTEX"
+            },
+            {
+              "order": 3,
+              "song_id": 500,
+              "name": "希望へのメロディー",
+              "difficulty": 5,
+              "stars": 9,
+              "notes": 931,
+              "name_zh": "迈向希望的旋律"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_059",
+          "name": "steμからの挑戦状 #1",
+          "sort_order": 59,
+          "total_notes": 1832,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.98
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": "<",
+                  "value": 30
+                },
+                {
+                  "operator": "<",
+                  "value": 70
+                },
+                {
+                  "operator": "<",
+                  "value": 160
+                }
+              ],
+              "gold": [
+                {
+                  "operator": "<",
+                  "value": 20
+                },
+                {
+                  "operator": "<",
+                  "value": 55
+                },
+                {
+                  "operator": "<",
+                  "value": 134
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 25
+              },
+              "gold": {
+                "operator": "<",
+                "value": 15
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 130
+                },
+                {
+                  "operator": ">=",
+                  "value": 120
+                },
+                {
+                  "operator": ">=",
+                  "value": 6
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 170
+                },
+                {
+                  "operator": ">=",
+                  "value": 150
+                },
+                {
+                  "operator": ">=",
+                  "value": 8
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 981,
+              "name": "1・2・さんしのでドンドカッカッ！",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 511,
+              "name_zh": "One Two SanShino de Dondo Kakka!"
+            },
+            {
+              "order": 2,
+              "song_id": 976,
+              "name": "ぺた・PETA！？パンプキン",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 524,
+              "name_zh": "PETA-PETA!?PUMPKIN"
+            },
+            {
+              "order": 3,
+              "song_id": 867,
+              "name": "うちゅうひこうし冒険譚",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 797,
+              "name_zh": "Uchuhikoushi Boukentan"
+            }
+          ]
+        },
+        {
+          "id": "gaiden_060",
+          "name": "太鼓チームからの挑戦状2022 #1",
+          "sort_order": 60,
+          "total_notes": 2252,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 466
+                },
+                {
+                  "operator": ">=",
+                  "value": 575
+                },
+                {
+                  "operator": ">=",
+                  "value": 525
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 524
+                },
+                {
+                  "operator": ">=",
+                  "value": 647
+                },
+                {
+                  "operator": ">=",
+                  "value": 591
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": "<",
+                  "value": 16
+                },
+                {
+                  "operator": "<",
+                  "value": 20
+                },
+                {
+                  "operator": "<",
+                  "value": 18
+                }
+              ],
+              "gold": [
+                {
+                  "operator": "<",
+                  "value": 6
+                },
+                {
+                  "operator": "<",
+                  "value": 8
+                },
+                {
+                  "operator": "<",
+                  "value": 6
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 64,
+              "name": "画竜点睛",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 608,
+              "name_zh": "画龙点睛"
+            },
+            {
+              "order": 2,
+              "song_id": 66,
+              "name": "百花繚乱",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 777,
+              "name_zh": "百花缭乱"
+            },
+            {
+              "order": 3,
+              "song_id": 1045,
+              "name": "一世風靡",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 867,
+              "name_zh": "一世风靡"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
