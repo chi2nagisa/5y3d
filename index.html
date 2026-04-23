@@ -57,6 +57,102 @@
       background: #e3f2fd;
       font-weight: 600;
     }
+    .main-tab-bar {
+      margin-bottom: 16px;
+    }
+    .main-tab-bar .tab-btn {
+      font-size: 1.05rem;
+      padding: 10px 28px;
+    }
+    .sub-tab-bar {
+      margin-bottom: 12px;
+    }
+    .sub-tab-bar .tab-btn {
+      font-size: 0.9rem;
+      padding: 6px 16px;
+    }
+    .panel {
+      display: none;
+    }
+    .panel.active {
+      display: block;
+    }
+    .import-card {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 32px;
+      display: flex;
+      gap: 32px;
+    }
+    .import-section {
+      flex: 1;
+      margin-bottom: 0;
+    }
+    .import-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #333;
+    }
+    .import-desc {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 16px;
+    }
+    .input-group {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .input-group input[type="text"] {
+      flex: 1;
+      min-width: 200px;
+      padding: 10px 12px;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-family: inherit;
+    }
+    .sync-btn {
+      padding: 10px 24px;
+      background: #1565c0;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .sync-btn:hover {
+      background: #0d47a1;
+    }
+    .sync-btn:disabled {
+      background: #90caf9;
+      cursor: not-allowed;
+    }
+    .input-group input[type="file"] {
+      font-size: 0.9rem;
+      font-family: inherit;
+    }
+    .status-text {
+      margin-top: 12px;
+      font-size: 0.9rem;
+      min-height: 1.2em;
+    }
+    .status-text.success { color: #2e7d32; }
+    .status-text.error { color: #c62828; }
+    .status-text.info { color: #1565c0; }
+    .divider {
+      width: 1px;
+      background: #e0e0e0;
+      margin: 0;
+      flex-shrink: 0;
+    }
     .placeholder {
       padding: 60px 20px;
       text-align: center;
@@ -263,6 +359,8 @@
       .version-cell { width: 80px; min-width: 80px; font-size: 0.75rem; }
       td { width: 44px; min-width: 44px; height: 44px; }
       .dani-cell img { width: 32px; height: 32px; }
+      .import-card { flex-direction: column; gap: 24px; padding: 20px; }
+      .divider { width: 100%; height: 1px; }
     }
   </style>
 </head>
@@ -270,12 +368,42 @@
   <h1>太鼓之达人 段位道场理论成绩</h1>
   <div id="loading">加载数据中...</div>
   <div id="app" style="display:none;">
-    <div class="tab-bar">
-      <button class="tab-btn active" data-tab="main" onclick="switchTab('main')">本传</button>
-      <button class="tab-btn" data-tab="extra" onclick="switchTab('extra')">外传</button>
+    <div class="tab-bar main-tab-bar">
+      <button class="tab-btn active" data-main-tab="import" onclick="switchMainTab('import')">导入数据</button>
+      <button class="tab-btn" data-main-tab="display" onclick="switchMainTab('display')">成绩展示</button>
     </div>
-    <div class="matrix-wrapper">
-      <table id="matrix"></table>
+
+    <div id="import-panel" class="panel active">
+      <div class="import-card">
+        <div class="import-section">
+          <div class="import-title">从 donder 查分器同步</div>
+          <div class="import-desc">输入你的 donder 用户 ID，点击同步按钮获取最新成绩</div>
+          <div class="input-group">
+            <input type="text" id="donder-id-input" placeholder="请输入 donder ID" />
+            <button class="sync-btn" onclick="syncFromApi()">同步成绩</button>
+          </div>
+          <div id="api-status" class="status-text"></div>
+        </div>
+        <div class="divider"></div>
+        <div class="import-section">
+          <div class="import-title">上传本地 JSON</div>
+          <div class="import-desc">上传符合格式的成绩 JSON 文件</div>
+          <div class="input-group">
+            <input type="file" id="json-file-input" accept=".json" onchange="handleFileSelect(this)" />
+          </div>
+          <div id="upload-status" class="status-text"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="display-panel" class="panel">
+      <div class="tab-bar sub-tab-bar">
+        <button class="tab-btn active" data-sub-tab="main" onclick="switchSubTab('main')">本篇</button>
+        <button class="tab-btn" data-sub-tab="extra" onclick="switchSubTab('extra')">外传</button>
+      </div>
+      <div class="matrix-wrapper">
+        <table id="matrix"></table>
+      </div>
     </div>
   </div>
 
@@ -329,29 +457,78 @@
     let highScoreMap = new Map();
     let allDaniIds = [];
     let selectedCellKey = null;
-    let currentTab = 'main';
+    let currentMainTab = 'import';
+    let currentSubTab = 'main';
 
     async function loadData() {
-      const [danniRes, extraRes, scoreRes] = await Promise.all([
-        fetch('dani_datas/danni_data.json'),
-        fetch('dani_datas/gaiden_data.json'),
-        fetch('score_example.json')
-      ]);
-      danniData = await danniRes.json();
-      extraDanniData = await extraRes.json();
-      scoreData = await scoreRes.json();
+      try {
+        const danniRes = await fetch('dani_datas/danni_data.json');
+        if (!danniRes.ok) throw new Error('danni_data.json HTTP ' + danniRes.status);
+        danniData = await danniRes.json();
+      } catch (e) {
+        console.error('Failed to load danni_data.json:', e);
+        throw new Error('段位数据加载失败，请确认 dani_datas/danni_data.json 文件存在');
+      }
 
-      for (const item of scoreData) {
-        const key = `${item.song_no}_${item.level}`;
-        scoreMap.set(key, item.high_score_result);
-        highScoreMap.set(key, item.high_score);
+      try {
+        const extraRes = await fetch('dani_datas/gaiden_data.json');
+        if (!extraRes.ok) throw new Error('gaiden_data.json HTTP ' + extraRes.status);
+        extraDanniData = await extraRes.json();
+      } catch (e) {
+        console.error('Failed to load gaiden_data.json:', e);
+        throw new Error('外传数据加载失败，请确认 dani_datas/gaiden_data.json 文件存在');
+      }
+
+      const cachedScore = localStorage.getItem('5y3d_score_data');
+      if (cachedScore) {
+        try {
+          scoreData = JSON.parse(cachedScore);
+          buildScoreMaps();
+          console.log('Score data loaded from localStorage');
+        } catch (e) {
+          console.error('Failed to parse cached score data', e);
+          await loadDefaultScore();
+        }
+      } else {
+        await loadDefaultScore();
+      }
+
+      const cachedId = localStorage.getItem('5y3d_donder_id');
+      if (cachedId) {
+        const input = document.getElementById('donder-id-input');
+        if (input) input.value = cachedId;
       }
 
       allDaniIds = DANI_ORDER.slice();
 
       document.getElementById('loading').style.display = 'none';
       document.getElementById('app').style.display = 'block';
+      document.getElementById('import-panel').classList.add('active');
       renderMatrix();
+    }
+
+    async function loadDefaultScore() {
+      try {
+        const scoreRes = await fetch('score_example.json');
+        if (!scoreRes.ok) throw new Error('score_example.json HTTP ' + scoreRes.status);
+        scoreData = await scoreRes.json();
+        buildScoreMaps();
+        console.log('Default score data loaded from score_example.json');
+      } catch (e) {
+        console.error('Failed to load score_example.json:', e);
+        scoreData = [];
+        buildScoreMaps();
+      }
+    }
+
+    function buildScoreMaps() {
+      scoreMap = new Map();
+      highScoreMap = new Map();
+      for (const item of scoreData) {
+        const key = `${item.song_no}_${item.level}`;
+        scoreMap.set(key, item.high_score_result);
+        highScoreMap.set(key, item.high_score);
+      }
     }
 
     function getScore(songId, difficulty) {
@@ -485,7 +662,7 @@
       const existingPlaceholder = table.parentNode.querySelector('.placeholder');
       if (existingPlaceholder) existingPlaceholder.remove();
 
-      if (currentTab === 'extra') {
+      if (currentSubTab === 'extra') {
         table.style.display = '';
         if (!extraDanniData || !extraDanniData.versions || extraDanniData.versions.length === 0) {
           const placeholder = document.createElement('div');
@@ -621,13 +798,154 @@
       table.appendChild(tbody);
     }
 
-    function switchTab(tab) {
-      if (tab === currentTab) return;
-      currentTab = tab;
-      document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.tab === tab);
+    function switchMainTab(tab) {
+      if (tab === currentMainTab) return;
+      currentMainTab = tab;
+      document.querySelectorAll('.main-tab-bar .tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.mainTab === tab);
+      });
+      document.getElementById('import-panel').classList.toggle('active', tab === 'import');
+      document.getElementById('display-panel').classList.toggle('active', tab === 'display');
+      if (tab === 'display') {
+        renderMatrix();
+      }
+    }
+
+    function switchSubTab(tab) {
+      if (tab === currentSubTab) return;
+      currentSubTab = tab;
+      document.querySelectorAll('.sub-tab-bar .tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.subTab === tab);
       });
       renderMatrix();
+    }
+
+    async function syncFromApi() {
+      const input = document.getElementById('donder-id-input');
+      const statusEl = document.getElementById('api-status');
+      const id = input.value.trim();
+
+      if (!id) {
+        statusEl.textContent = '请输入 donder ID';
+        statusEl.className = 'status-text error';
+        return;
+      }
+
+      const btn = document.querySelector('.sync-btn');
+      btn.disabled = true;
+      statusEl.textContent = '正在同步...';
+      statusEl.className = 'status-text info';
+
+      try {
+        const url = `https://hasura.llx.life/api/rest/donder/get-score?id=${encodeURIComponent(id)}`;
+        const res = await fetch(url);
+
+        if (!res.ok) {
+          throw new Error(`Server error: ${res.status}`);
+        }
+
+        const result = await res.json();
+
+        if (!result || !result.score || typeof result.score.data !== 'string') {
+          throw new Error('Invalid response format: expected { score: { data: "[...]" } }');
+        }
+
+        const rawList = JSON.parse(result.score.data);
+        if (!Array.isArray(rawList)) {
+          throw new Error('Parsed score data is not an array');
+        }
+
+        const data = rawList.map(item => ({
+          song_no: item.song_no,
+          level: item.level,
+          high_score: item.high_score,
+          high_score_result: [item.good_cnt, item.ok_cnt, item.ng_cnt, item.pound_cnt, item.combo_cnt],
+          best_score_rank: item.best_score_rank,
+          option_flg: item.option_flg,
+          tone_flg: item.tone_flg,
+          highscore_mode: item.highscore_mode,
+          highscore_datetime: item.highscore_datetime,
+          update_datetime: item.update_datetime
+        }));
+
+        scoreData = data;
+        buildScoreMaps();
+        localStorage.setItem('5y3d_donder_id', id);
+        localStorage.setItem('5y3d_score_data', JSON.stringify(scoreData));
+
+        statusEl.textContent = `Sync success! ${data.length} score records`;
+        statusEl.className = 'status-text success';
+
+        setTimeout(() => {
+          switchMainTab('display');
+          if (currentSubTab !== 'main') {
+            switchSubTab('main');
+          }
+        }, 800);
+
+      } catch (err) {
+        console.error(err);
+        let msg = err.message;
+        if (msg.includes('Failed to fetch') || msg.includes('NetworkError') || msg.includes('CORS')) {
+          msg = 'Request failed. This may be due to CORS restrictions. Please use JSON upload instead.';
+        }
+        statusEl.textContent = msg;
+        statusEl.className = 'status-text error';
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    function handleFileSelect(input) {
+      const statusEl = document.getElementById('upload-status');
+      const file = input.files[0];
+
+      if (!file) return;
+
+      statusEl.textContent = 'Reading file...';
+      statusEl.className = 'status-text info';
+
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const data = JSON.parse(e.target.result);
+
+          if (!Array.isArray(data)) {
+            throw new Error('Root object must be an array');
+          }
+
+          if (data.length > 0 && (!data[0].hasOwnProperty('song_no') || !data[0].hasOwnProperty('high_score_result'))) {
+            throw new Error('Data fields do not match expected format');
+          }
+
+          scoreData = data;
+          buildScoreMaps();
+          localStorage.setItem('5y3d_score_data', JSON.stringify(scoreData));
+
+          statusEl.textContent = `Upload success! ${data.length} score records`;
+          statusEl.className = 'status-text success';
+
+          input.value = '';
+
+          setTimeout(() => {
+            switchMainTab('display');
+            if (currentSubTab !== 'main') {
+              switchSubTab('main');
+            }
+          }, 800);
+
+        } catch (err) {
+          console.error(err);
+          statusEl.textContent = `Parse failed: ${err.message}`;
+          statusEl.className = 'status-text error';
+          input.value = '';
+        }
+      };
+      reader.onerror = () => {
+        statusEl.textContent = 'File read failed';
+        statusEl.className = 'status-text error';
+      };
+      reader.readAsText(file);
     }
 
     function toggleDetail(version, dani, result, cell) {
@@ -758,8 +1076,9 @@
     }
 
     loadData().catch(err => {
-      console.error(err);
-      document.getElementById('loading').textContent = '数据加载失败，请检查控制台';
+      console.error('Data loading failed:', err);
+      const loadingEl = document.getElementById('loading');
+      loadingEl.innerHTML = `<div style="color:#c62828;margin-bottom:8px;">数据加载失败</div><div style="color:#666;font-size:0.9rem;">${err.message || '未知错误'}</div><div style="color:#666;font-size:0.85rem;margin-top:8px;">提示：请使用静态服务器（如 python -m http.server）打开本页面，不要直接用 file:// 协议访问。</div>`;
     });
   </script>
 </body>
