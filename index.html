@@ -264,7 +264,8 @@
       padding-right: 0;
     }
     .song-name-cell {
-      max-width: 240px;
+      max-width: 480px;
+      min-width: 200px;
       white-space: normal;
     }
     .song-diff {
@@ -354,6 +355,72 @@
       margin-bottom: 4px;
       color: #666;
     }
+    .edit-btn {
+      font-size: 0.8rem;
+      color: #666;
+      background: none;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 2px 8px;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+    .edit-btn:hover {
+      color: #1565c0;
+      border-color: #1565c0;
+    }
+    .manual-badge {
+      font-size: 0.75rem;
+      color: #1565c0;
+      margin-left: 4px;
+    }
+    .edit-form-row td {
+      padding: 8px 16px;
+      background: #f0f8ff;
+      border-top: 1px solid #e3f2fd;
+      height: auto;
+    }
+    .edit-form {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .edit-form label {
+      font-size: 0.85rem;
+      color: #555;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .edit-form input {
+      width: 60px;
+      padding: 4px 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-family: inherit;
+    }
+    .reset-manual-btn {
+      margin-top: 16px;
+      padding: 8px 20px;
+      background: #c62828;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .reset-manual-btn:hover {
+      background: #b71c1c;
+    }
+    .reset-manual-desc {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 6px;
+    }
     @media (max-width: 768px) {
       h1 { font-size: 1.1rem; }
       .version-cell { width: 80px; min-width: 80px; font-size: 0.75rem; }
@@ -361,6 +428,8 @@
       .dani-cell img { width: 32px; height: 32px; }
       .import-card { flex-direction: column; gap: 24px; padding: 20px; }
       .divider { width: 100%; height: 1px; }
+      .edit-form { gap: 8px; }
+      .edit-form input { width: 50px; }
     }
   </style>
 </head>
@@ -392,6 +461,12 @@
             <input type="file" id="json-file-input" accept=".json" onchange="handleFileSelect(this)" />
           </div>
           <div id="upload-status" class="status-text"></div>
+          <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e0e0e0;">
+            <div class="import-title">手动成绩管理</div>
+            <div class="import-desc">清空在详情面板中手动输入的假设成绩</div>
+            <button class="reset-manual-btn" onclick="resetManualScores()">重置手动修改</button>
+            <div class="reset-manual-desc">恢复为真实成绩数据，不影响 API 同步或 JSON 上传的成绩</div>
+          </div>
         </div>
       </div>
     </div>
@@ -455,6 +530,8 @@
     let scoreData = null;
     let scoreMap = new Map();
     let highScoreMap = new Map();
+    let manualScoreMap = new Map();
+    let manualHighScoreMap = new Map();
     let allDaniIds = [];
     let selectedCellKey = null;
     let currentMainTab = 'import';
@@ -529,16 +606,38 @@
         scoreMap.set(key, item.high_score_result);
         highScoreMap.set(key, item.high_score);
       }
+      manualScoreMap = new Map();
+      manualHighScoreMap = new Map();
+      try {
+        const raw = localStorage.getItem('5y3d_manual_scores');
+        if (raw) {
+          const obj = JSON.parse(raw);
+          for (const [key, val] of Object.entries(obj)) {
+            if (val && Array.isArray(val.high_score_result)) {
+              manualScoreMap.set(key, val.high_score_result);
+            }
+            if (val && typeof val.high_score === 'number') {
+              manualHighScoreMap.set(key, val.high_score);
+            }
+          }
+        }
+      } catch (e) {
+        console.error('Failed to load manual scores', e);
+      }
     }
 
     function getScore(songId, difficulty) {
       if (songId == null || songId === -1) return null;
-      return scoreMap.get(`${songId}_${difficulty}`) || null;
+      const key = `${songId}_${difficulty}`;
+      if (manualScoreMap.has(key)) return manualScoreMap.get(key);
+      return scoreMap.get(key) || null;
     }
 
     function getHighScore(songId, difficulty) {
       if (songId == null || songId === -1) return null;
-      return highScoreMap.get(`${songId}_${difficulty}`) || null;
+      const key = `${songId}_${difficulty}`;
+      if (manualHighScoreMap.has(key)) return manualHighScoreMap.get(key);
+      return highScoreMap.get(key) || null;
     }
 
     function evaluate(value, operator, target) {
@@ -991,6 +1090,10 @@
         const diffStars = s.stars ? `★${s.stars}` : '';
         const diffLabel = ['', '简单', '普通', '困难', '魔王', '魔王(裏)'][s.difficulty] || '';
         const idTag = s.song_id > 0 ? `<span class="song-id">ID:${s.song_id}</span>` : '';
+        const songKey = `${s.song_id}_${s.difficulty}`;
+        const isManual = s.song_id > 0 && manualScoreMap.has(songKey);
+        const manualBadge = isManual ? '<span class="manual-badge">🖊️</span>' : '';
+        const editBtn = s.song_id > 0 ? `<button class="edit-btn" onclick="startEditSong('${songKey}', ${s.order}, this)">编辑</button>` : '';
 
         let statsHtml = '';
         if (hasScore) {
@@ -1008,7 +1111,7 @@
           statsHtml = `<td colspan="5"><span class="song-missing">未游玩</span></td>`;
         }
 
-        songsHtml += `<tr><td class="song-name-cell">${s.order}. ${s.name} <span class="song-diff">[${diffLabel}${diffStars}]</span>${idTag}</td>${statsHtml}</tr>`;
+        songsHtml += `<tr><td class="song-name-cell">${s.order}. ${s.name} <span class="song-diff">[${diffLabel}${diffStars}]</span>${idTag}</td>${statsHtml}<td style="text-align:right;white-space:nowrap;border:none;">${editBtn}${manualBadge}</td></tr>`;
       }
       songsHtml += '</tbody></table></div>';
 
@@ -1073,6 +1176,85 @@
       condsHtml += '</ul></div>';
 
       return `<div class="detail-panel">${header}${songsHtml}${condsHtml}</div>`;
+    }
+
+    function startEditSong(songKey, order, btn) {
+      const row = btn.closest('tr');
+      const oldForm = row.parentNode.querySelector('.edit-form-row');
+      if (oldForm) oldForm.remove();
+
+      const currentScore = getScore(...songKey.split('_').map(Number)) || [0, 0, 0, 0, 0];
+
+      const formRow = document.createElement('tr');
+      formRow.className = 'edit-form-row';
+      formRow.innerHTML = `
+        <td colspan="7">
+          <div class="edit-form">
+            <label>良 <input type="number" min="0" class="edit-input" data-idx="0" value="${currentScore[0] || 0}"></label>
+            <label>可 <input type="number" min="0" class="edit-input" data-idx="1" value="${currentScore[1] || 0}"></label>
+            <label>不可 <input type="number" min="0" class="edit-input" data-idx="2" value="${currentScore[2] || 0}"></label>
+            <label>连打 <input type="number" min="0" class="edit-input" data-idx="3" value="${currentScore[3] || 0}"></label>
+            <label>连击 <input type="number" min="0" class="edit-input" data-idx="4" value="${currentScore[4] || 0}"></label>
+            <button class="sync-btn" onclick="saveManualScore('${songKey}', this)">保存</button>
+            <button class="sync-btn" style="background:#999;" onclick="cancelEditSong(this)">取消</button>
+          </div>
+        </td>
+      `;
+      row.after(formRow);
+    }
+
+    function saveManualScore(songKey, btn) {
+      const formRow = btn.closest('.edit-form-row');
+      const inputs = formRow.querySelectorAll('.edit-input');
+      const values = [];
+      for (const input of inputs) {
+        const val = parseInt(input.value, 10);
+        if (isNaN(val) || val < 0) {
+          alert('请输入非负整数');
+          return;
+        }
+        values.push(val);
+      }
+
+      manualScoreMap.set(songKey, values);
+      const existingHighScore = highScoreMap.get(songKey);
+      manualHighScoreMap.set(songKey, existingHighScore || 0);
+
+      const obj = {};
+      for (const [key, val] of manualScoreMap) {
+        obj[key] = {
+          high_score_result: val,
+          high_score: manualHighScoreMap.get(key) || 0
+        };
+      }
+      localStorage.setItem('5y3d_manual_scores', JSON.stringify(obj));
+
+      const savedKey = selectedCellKey;
+      selectedCellKey = null;
+      renderMatrix();
+      if (savedKey) {
+        const cell = document.querySelector(`.dani-cell[data-key="${savedKey}"]`);
+        if (cell) cell.click();
+      }
+    }
+
+    function cancelEditSong(btn) {
+      const formRow = btn.closest('.edit-form-row');
+      if (formRow) formRow.remove();
+    }
+
+    function resetManualScores() {
+      if (!confirm('确定要清空所有手动修改的成绩吗？')) return;
+      manualScoreMap.clear();
+      manualHighScoreMap.clear();
+      localStorage.removeItem('5y3d_manual_scores');
+      const savedKey = selectedCellKey;
+      selectedCellKey = null;
+      renderMatrix();
+      if (savedKey) {
+        const cell = document.querySelector(`.dani-cell[data-key="${savedKey}"]`);
+        if (cell) cell.click();
+      }
     }
 
     loadData().catch(err => {
