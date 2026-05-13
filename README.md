@@ -1,116 +1,142 @@
-# 5y3d — 太鼓之达人段位道场理论成绩
+# 5 Years of Dan, 3 Mocks per Rank (5y3d)
 
-> **"5 Years of Dan, 3 Mocks per Rank"**
+> Taiko no Tatsujin Dan Dojo Theoretical Clear Calculator
 
-一个纯静态前端页面，用于展示玩家在《太鼓之达人》各版本段位道场中的**理论合格结果**。根据历史最佳成绩自动推算在各版本、各段位中能否通过赤合格 / 金合格，并展示 Perfect / FullCombo 边框状态。
+[English](README.md) | [中文](README.zh.md)
 
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
-
----
-
-## ✨ 功能特点
-
-- **多版本矩阵展示**：支持从 GREEN 到虹版 2025 共 10 个版本的段位道场数据
-- **自动理论计算**：根据玩家成绩自动判定每段位的合格状态（金合格 / 赤合格 / 不合格 / 未完全游玩）
-- **边框状态判定**：
-  - 🌈 **Perfect（虹框）**：三曲全部全良
-  - ⭐ **FullCombo（金框）**：三曲全部全连
-  - ⚪ **Normal（普通框）**：常规通过
-- **详情面板**：点击任意单元格，展开查看课题曲、合格条件与玩家成绩的详细对比
-- **里谱面兼容**：支持 `difficulty: 5`（魔王裏）的成绩匹配
+A static web tool that calculates theoretical clear results (Gold Clear / Red Clear / Fail / Incomplete) for each Dan rank across all versions of *Taiko no Tatsujin* based on the player's historical best scores. Also determines Perfect / FullCombo / Normal frame status.
 
 ---
 
-## 🚀 快速开始
+## Tech Stack
 
-由于页面通过 `fetch()` 加载本地 JSON 文件，**不能直接用 `file://` 协议打开**。请使用任意静态服务器：
+- **Pure static single-file**: All logic in `index.html`, zero build tools, zero frameworks
+- **Data-driven**: Dan configurations and player scores loaded entirely from JSON
+- **Browser storage**: Score data and manual overrides cached in `localStorage`
+
+---
+
+## Data Specs
+
+### Dan Data `dani_datas/dani_data.json`
+
+Root: `{ "versions": [...] }`, ordered chronologically.
+
+Each `version`:
+- `id`: version slug, e.g. `green`, `blue`, `nijiiro_2025`
+- `name_zh`: Chinese version name
+- `danis`: array of dan objects
+
+Each `dani`:
+- `id`: dan slug
+- `sort_order`: sort index (0~24)
+- `total_notes`: total note count across 3 songs
+- `songs`: 3 exam songs with `song_id`, `name`, `name_zh`, `difficulty`, `stars`, `notes`
+- `clear_conditions`: array of clear conditions
+
+**Adding a new version**: append to the `versions` array; no code changes required.
+
+### Extra Dan Data `dani_datas/gaiden_data.json`
+
+Same schema as `dani_data.json`, but `danis` order follows the raw JSON order (no `sort_order`).
+
+### Score Data Format
+
+Array of objects:
+- `song_no` (Integer): song ID, maps to `song_id` in dan data
+- `level` (Integer): difficulty, `1~5` maps to Easy/Normal/Hard/Oni/Oni(Ura)
+- `high_score` (Integer): total song score
+- `high_score_result` (Integer[5]):
+  - `[0]` Perfect count
+  - `[1]` Good count
+  - `[2]` Bad count
+  - `[3]` Drumroll count
+  - `[4]` Max combo
+
+**Data sources**:
+- donder API: `https://hasura.llx.life/api/rest/donder/get-score?id={id}`
+- Local JSON file upload
+
+
+---
+
+## Core Logic
+
+### Clear Calculation
+
+`computeDaniResult(dani)` matches scores for each exam song, then aggregates by condition type:
+
+| Condition | shared | per_song |
+|-----------|--------|----------|
+| `good` | Sum of `[0]` | Per-song `[0]` |
+| `ok` | Sum of `[1]` | Per-song `[1]` |
+| `bad` | Sum of `[2]` | Per-song `[2]` |
+| `roll` / `rolls` | Sum of `[3]` | Per-song `[3]` |
+| `combo` | Sum of `[4]` | Per-song `[4]` |
+| `hits` | `good + ok + roll` total | Per-song |
+| `score` | Sum of `high_score` | Per-song `high_score` |
+| `gauge` | **Display only, not calculated** | **Display only, not calculated** |
+
+### Frame Judgment
+
+- **Perfect**: All 3 songs have `perfect count === note count`
+- **FullCombo**: All 3 songs have `max combo === note count`, but not all perfect
+- **Normal**: Neither of the above
+
+### Manual Score Editing
+
+- Entry: "Edit" button next to each exam song in the detail panel
+- Storage: `localStorage['5y3d_manual_scores']`, physically isolated from real scores
+- Read priority: Manual > Real (API/JSON) > Example data
+- Reset: "Reset Manual Scores" button in the Import Data panel
+
+### Bilingual Song Names
+
+- Default: Chinese (`songs[].name_zh`)
+- Fallback to Japanese (`songs[].name`) when `name_zh` is null or empty
+- Preference persisted in `localStorage['5y3d_lang']`
+
+---
+
+## Local Dev
 
 ```bash
-# Python 3
 python -m http.server 8080
-
-# Node.js
-npx serve .
+# Open http://localhost:8080
 ```
 
-然后在浏览器中访问：
-
-```
-http://localhost:8080
-```
-
----
-
-## 📁 项目结构
+**File structure**:
 
 ```
 .
-├── index.html                    # 页面入口（HTML + CSS + JS）
+├── index.html                 # Entry (HTML + CSS + JS)
 ├── dani_datas/
-│   └── dani_data.json           # 段位配置数据（v3.0 规范，10 个版本）
-├── dani_score_logo/              # 合格状态图标（WebP）
-│   ├── GoldNormalClear.webp
-│   ├── GoldFullComboClear.webp
-│   ├── GoldPerfectClear.webp
-│   ├── RedNormalClear.webp
-│   ├── RedFullComboClear.webp
-│   ├── RedPerfectClear.webp
-│   └── NotClear.webp
-├── score_example.json            # 玩家成绩示例数据
-├── dani_data_k2p6pre.json       # 旧格式/备用段位数据
-└── dev_doc/                      # 开发文档
-    ├── AGENTS.md                 # AI 代理协作规范（必读）
-    ├── requirements_doc.md       # 需求文档
-    ├── json_structure_design.md  # v3.0 数据结构规范
-    ├── DESIGN.md                 # 技术规划存档
-    ├── TODO.md                   # 开发任务跟踪
-    └── VERSION.md                # 版本变更记录
+│   ├── dani_data.json        # Main dan config (v3.0)
+│   └── gaiden_data.json      # Extra dan config
+└── dani_score_logo/           # Clear status icons (WebP)
 ```
 
 ---
 
-## 🎮 数据来源与匹配
+## Version History
 
-### 段位数据
-- **文件**：`dani_datas/dani_data.json`
-- **版本覆盖**：GREEN、BLUE、YELLOW、RED、虹 2020 ~ 虹 2025 共 10 个版本
-- **段位覆盖**：初級 → 達人，共 25 个段位
-- **歌曲匹配率**：约 77.5% 的课题曲已补充 `song_id`，可直接与玩家成绩关联；未匹配曲目（主要为颜色版流行曲、虹版高难新曲）标记为 `-1`
-
-### 成绩数据
-- **文件**：`score_example.json`
-- **匹配规则**：通过 `song_no`（歌曲 ID）+ `level`（难度 1~5）与段位课题曲精确匹配
-- **核心字段**：`high_score_result` 数组，分别对应 [良, 可, 不可, 连打, 最大连击数]
-
----
-
-## 🛠️ 技术栈
-
-- **HTML5 + CSS3 + Vanilla JavaScript (ES6+)**
-- 无构建工具、无框架、无打包流程
-- 现代浏览器即可运行
+| Version | Date | Highlights |
+|---------|------|------------|
+| v1.5.1 | 2026-05-11 | Two-row song list layout to prevent overlap |
+| v1.5.0 | 2026-05-11 | Bilingual song name switching (zh/ja) |
+| v1.4.0 | 2026-05-11 | Manual score editing & what-if analysis |
+| v1.3.1 | 2026-05-11 | Song name column width fix |
+| v1.3.0 | 2025-04-19 | Score import page (donder API + JSON upload) |
+| v1.2.0 | 2025-04-19 | Extra dan panel actual rendering |
+| v1.1.1 | 2025-04-19 | `score` condition support, extra data fixes |
+| v1.1.0 | 2025-04-17 | Main/Extra tab switching |
+| v1.0.0 | 2025-04-09 | Initial: matrix display, clear calc, detail panel |
 
 ---
 
-## 📄 相关文档
+## Known Issues / TODO
 
-| 文档 | 说明 |
-|------|------|
-| [`dev_doc/AGENTS.md`](dev_doc/AGENTS.md) | AI 编码代理协作规范与开发流程 |
-| [`dev_doc/requirements_doc.md`](dev_doc/requirements_doc.md) | 功能需求与验收标准 |
-| [`dev_doc/json_structure_design.md`](dev_doc/json_structure_design.md) | v3.0 JSON 数据结构设计规范 |
-| [`dev_doc/DESIGN.md`](dev_doc/DESIGN.md) | 技术规划与架构设计存档 |
-| [`dev_doc/TODO.md`](dev_doc/TODO.md) | 开发任务跟踪 |
-| [`dev_doc/VERSION.md`](dev_doc/VERSION.md) | 版本变更记录 |
+- [ ] Extra mode detail panel may scroll horizontally on narrow screens
 
----
-
-## 📌 当前版本
-
-**v1.0.0** — 已实现多版本段位矩阵展示、理论合格自动计算、详情面板交互。
-
----
-
-## 📜 License
-
-MIT
+- [ ] Many Color Pop songs have `song_id = -1`, unmatchable
+- [ ] Manual editing doesn't support `high_score` override (incomplete for `score` condition what-if)
