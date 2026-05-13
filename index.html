@@ -16,7 +16,40 @@
     h1 {
       text-align: center;
       font-size: 1.5rem;
+      margin-bottom: 0;
+    }
+    .page-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
       margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 4px;
+    }
+    .lang-btn {
+      padding: 4px 10px;
+      font-size: 0.85rem;
+      font-family: inherit;
+      color: #666;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .lang-btn:hover {
+      border-color: #1565c0;
+      color: #1565c0;
+    }
+    .lang-btn.active {
+      background: #1565c0;
+      color: #fff;
+      border-color: #1565c0;
+      font-weight: 600;
     }
     #loading {
       text-align: center;
@@ -434,7 +467,13 @@
   </style>
 </head>
 <body>
-  <h1>太鼓之达人 段位道场理论成绩</h1>
+  <div class="page-header">
+    <h1>太鼓之达人 段位道场理论成绩</h1>
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="zh" onclick="switchLang('zh')">中</button>
+      <button class="lang-btn" data-lang="ja" onclick="switchLang('ja')">日</button>
+    </div>
+  </div>
   <div id="loading">加载数据中...</div>
   <div id="app" style="display:none;">
     <div class="tab-bar main-tab-bar">
@@ -536,6 +575,40 @@
     let selectedCellKey = null;
     let currentMainTab = 'import';
     let currentSubTab = 'main';
+    let currentLang = 'zh';
+
+    function loadLang() {
+      const saved = localStorage.getItem('5y3d_lang');
+      if (saved === 'zh' || saved === 'ja') {
+        currentLang = saved;
+      }
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === currentLang);
+      });
+    }
+
+    function getSongName(song) {
+      if (currentLang === 'zh' && song.name_zh && song.name_zh.trim() !== '') {
+        return song.name_zh;
+      }
+      return song.name;
+    }
+
+    function switchLang(lang) {
+      if (lang === currentLang) return;
+      currentLang = lang;
+      localStorage.setItem('5y3d_lang', lang);
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      const savedKey = selectedCellKey;
+      selectedCellKey = null;
+      renderMatrix();
+      if (savedKey) {
+        const cell = document.querySelector(`.dani-cell[data-key="${savedKey}"]`);
+        if (cell) cell.click();
+      }
+    }
 
     async function loadData() {
       try {
@@ -577,6 +650,7 @@
       }
 
       allDaniIds = DANI_ORDER.slice();
+      loadLang();
 
       document.getElementById('loading').style.display = 'none';
       document.getElementById('app').style.display = 'block';
@@ -1111,7 +1185,8 @@
           statsHtml = `<td colspan="5"><span class="song-missing">未游玩</span></td>`;
         }
 
-        songsHtml += `<tr><td class="song-name-cell">${s.order}. ${s.name} <span class="song-diff">[${diffLabel}${diffStars}]</span>${idTag}</td>${statsHtml}<td style="text-align:right;white-space:nowrap;border:none;">${editBtn}${manualBadge}</td></tr>`;
+        const displayName = getSongName(s);
+        songsHtml += `<tr><td class="song-name-cell">${s.order}. ${displayName} <span class="song-diff">[${diffLabel}${diffStars}]</span>${idTag}</td>${statsHtml}<td style="text-align:right;white-space:nowrap;border:none;">${editBtn}${manualBadge}</td></tr>`;
       }
       songsHtml += '</tbody></table></div>';
 
