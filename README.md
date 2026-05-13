@@ -46,8 +46,8 @@ http://localhost:8080
 ```
 .
 ├── index.html                    # 页面入口（HTML + CSS + JS）
-├── danni_datas/
-│   └── danni_data.json           # 段位配置数据（v3.0 规范，10 个版本）
+├── dani_datas/
+│   └── dani_data.json           # 段位配置数据（v3.0 规范，10 个版本）
 ├── dani_score_logo/              # 合格状态图标（WebP）
 │   ├── GoldNormalClear.webp
 │   ├── GoldFullComboClear.webp
@@ -57,7 +57,7 @@ http://localhost:8080
 │   ├── RedPerfectClear.webp
 │   └── NotClear.webp
 ├── score_example.json            # 玩家成绩示例数据
-├── danni_data_k2p6pre.json       # 旧格式/备用段位数据
+├── dani_data_k2p6pre.json       # 旧格式/备用段位数据
 └── dev_doc/                      # 开发文档
     ├── AGENTS.md                 # AI 代理协作规范（必读）
     ├── requirements_doc.md       # 需求文档
@@ -72,7 +72,7 @@ http://localhost:8080
 ## 🎮 数据来源与匹配
 
 ### 段位数据
-- **文件**：`danni_datas/danni_data.json`
+- **文件**：`dani_datas/dani_data.json`
 - **版本覆盖**：GREEN、BLUE、YELLOW、RED、虹 2020 ~ 虹 2025 共 10 个版本
 - **段位覆盖**：初級 → 達人，共 25 个段位
 - **歌曲匹配率**：约 77.5% 的课题曲已补充 `song_id`，可直接与玩家成绩关联；未匹配曲目（主要为颜色版流行曲、虹版高难新曲）标记为 `-1`

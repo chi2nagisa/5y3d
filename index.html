@@ -525,7 +525,7 @@
       dan_10: '十段', kuroto: '玄人', meijin: '名人', choujin: '超人', tatsujin: '達人'
     };
 
-    let danniData = null;
+    let daniData = null;
     let extraDanniData = null;
     let scoreData = null;
     let scoreMap = new Map();
@@ -539,12 +539,12 @@
 
     async function loadData() {
       try {
-        const danniRes = await fetch('dani_datas/danni_data.json');
-        if (!danniRes.ok) throw new Error('danni_data.json HTTP ' + danniRes.status);
-        danniData = await danniRes.json();
+        const daniRes = await fetch('dani_datas/dani_data.json');
+        if (!daniRes.ok) throw new Error('dani_data.json HTTP ' + daniRes.status);
+        daniData = await daniRes.json();
       } catch (e) {
-        console.error('Failed to load danni_data.json:', e);
-        throw new Error('段位数据加载失败，请确认 dani_datas/danni_data.json 文件存在');
+        console.error('Failed to load dani_data.json:', e);
+        throw new Error('段位数据加载失败，请确认 dani_datas/dani_data.json 文件存在');
       }
 
       try {
@@ -847,7 +847,7 @@
       table.appendChild(thead);
 
       const tbody = document.createElement('tbody');
-      for (const version of danniData.versions) {
+      for (const version of daniData.versions) {
         const daniMap = new Map(version.danis.map(d => [d.id, d]));
         const row = document.createElement('tr');
         row.id = `row-${version.id}`;
