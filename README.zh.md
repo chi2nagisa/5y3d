@@ -54,7 +54,7 @@
 **数据来源**：
 - donder 查分器 API：`https://hasura.llx.life/api/rest/donder/get-score?id={id}`
 - 本地 JSON 文件上传
-- 默认回退：`score_example.json`（开发用，不提交）
+
 
 ---
 

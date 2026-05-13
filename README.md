@@ -56,7 +56,7 @@ Array of objects:
 **Data sources**:
 - donder API: `https://hasura.llx.life/api/rest/donder/get-score?id={id}`
 - Local JSON file upload
-- Fallback: `score_example.json` (dev-only, gitignored)
+
 
 ---
 
