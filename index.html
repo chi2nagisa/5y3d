@@ -14,9 +14,24 @@
       color: #333;
     }
     h1 {
-      text-align: center;
-      font-size: 1.5rem;
+      display: inline-block;
+      font-size: 1.8rem;
+      font-weight: 800;
       margin-bottom: 0;
+      letter-spacing: 6px;
+      color: #1a1a1a;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e57373;
+    }
+    .title-block {
+      text-align: center;
+    }
+
+    .subtitle {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 8px;
+      letter-spacing: 1px;
     }
     .page-header {
       display: flex;
@@ -455,7 +470,8 @@
       margin-top: 6px;
     }
     @media (max-width: 768px) {
-      h1 { font-size: 1.1rem; }
+      h1 { font-size: 1.3rem; letter-spacing: 3px; }
+      .title-divider { width: 140px; }
       .version-cell { width: 80px; min-width: 80px; font-size: 0.75rem; }
       td { width: 44px; min-width: 44px; height: 44px; }
       .dani-cell img { width: 32px; height: 32px; }
@@ -468,9 +484,9 @@
 </head>
 <body>
   <div class="page-header">
-    <div style="text-align:center;">
-      <h1 style="margin-bottom:4px;">五年段位三年模拟</h1>
-      <div style="font-size:0.9rem;color:#666;">太鼓之达人 · 段位道场理论成绩</div>
+    <div class="title-block">
+      <h1>五年段位三年模拟</h1>
+      <div class="subtitle">太鼓之达人 · 段位道场理论成绩</div>
     </div>
     <div class="lang-switch">
       <button class="lang-btn active" data-lang="zh" onclick="switchLang('zh')">中</button>
@@ -640,10 +656,10 @@
           console.log('Score data loaded from localStorage');
         } catch (e) {
           console.error('Failed to parse cached score data', e);
-          await loadDefaultScore();
+          loadDefaultScore();
         }
       } else {
-        await loadDefaultScore();
+        loadDefaultScore();
       }
 
       const cachedId = localStorage.getItem('5y3d_donder_id');
@@ -661,18 +677,10 @@
       renderMatrix();
     }
 
-    async function loadDefaultScore() {
-      try {
-        const scoreRes = await fetch('score_example.json');
-        if (!scoreRes.ok) throw new Error('score_example.json HTTP ' + scoreRes.status);
-        scoreData = await scoreRes.json();
-        buildScoreMaps();
-        console.log('Default score data loaded from score_example.json');
-      } catch (e) {
-        console.error('Failed to load score_example.json:', e);
-        scoreData = [];
-        buildScoreMaps();
-      }
+    function loadDefaultScore() {
+      scoreData = [];
+      buildScoreMaps();
+      console.log('No cached score data, using empty scores');
     }
 
     function buildScoreMaps() {
