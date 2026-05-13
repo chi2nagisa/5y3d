@@ -265,7 +265,6 @@
       padding: 16px;
       background: #fafafa;
       border-top: 2px solid #2196f3;
-      min-width: 720px;
     }
     .detail-header {
       font-size: 1.2rem;
@@ -298,7 +297,7 @@
       padding-right: 0;
     }
     .song-name-cell {
-      max-width: 560px;
+      max-width: 660px;
       min-width: 200px;
       white-space: normal;
     }
@@ -1170,24 +1169,39 @@
         const manualBadge = isManual ? '<span class="manual-badge">🖊️</span>' : '';
         const editBtn = s.song_id > 0 ? `<button class="edit-btn" onclick="startEditSong('${songKey}', ${s.order}, this)">编辑</button>` : '';
 
-        let statsHtml = '';
+        let statsRow = '';
         if (hasScore) {
           const sc = songRes.score;
           const isFullCombo = sc[4] >= s.notes;
           const comboClass = isFullCombo ? 'stat-val combo stat-highlight' : 'stat-val combo';
-          statsHtml = `
-            <td><span class="stat-label">良:</span><span class="stat-val">${sc[0]}</span></td>
-            <td><span class="stat-label">可:</span><span class="stat-val">${sc[1]}</span></td>
-            <td><span class="stat-label">不可:</span><span class="stat-val">${sc[2]}</span></td>
-            <td><span class="stat-label">连打:</span><span class="stat-val">${sc[3]}</span></td>
-            <td><span class="stat-label">连击:</span><span class="${comboClass}">${sc[4]}/${s.notes}</span></td>
+          statsRow = `
+            <div><span class="stat-label">良:</span><span class="stat-val">${sc[0]}</span></div>
+            <div><span class="stat-label">可:</span><span class="stat-val">${sc[1]}</span></div>
+            <div><span class="stat-label">不可:</span><span class="stat-val">${sc[2]}</span></div>
+            <div><span class="stat-label">连打:</span><span class="stat-val">${sc[3]}</span></div>
+            <div><span class="stat-label">连击:</span><span class="${comboClass}">${sc[4]}/${s.notes}</span></div>
           `;
         } else {
-          statsHtml = `<td colspan="5"><span class="song-missing">未游玩</span></td>`;
+          statsRow = '<span class="song-missing">未游玩</span>';
         }
 
         const displayName = getSongName(s);
-        songsHtml += `<tr><td class="song-name-cell">${s.order}. ${displayName} <span class="song-diff">[${diffLabel}${diffStars}]</span>${idTag}</td>${statsHtml}<td style="text-align:right;white-space:nowrap;border:none;">${editBtn}${manualBadge}</td></tr>`;
+        const songTitle = `${s.order}. ${displayName} <span class="song-diff">[${diffLabel}${diffStars}]</span>${idTag}`;
+        songsHtml += `
+          <tr>
+            <td colspan="7" style="padding-bottom:4px;">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">
+                <span class="song-name-cell" style="max-width:none;min-width:auto;padding:0;">${songTitle}</span>
+                <span style="white-space:nowrap;flex-shrink:0;">${editBtn}${manualBadge}</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="7" style="padding-top:0;padding-bottom:12px;">
+              <div style="display:flex;gap:16px;flex-wrap:wrap;font-size:0.9rem;">${statsRow}</div>
+            </td>
+          </tr>
+        `;
       }
       songsHtml += '</tbody></table></div>';
 
