@@ -54,7 +54,7 @@ Array of objects:
   - `[4]` Max combo
 
 **Data sources**:
-- donder API: `https://hasura.llx.life/api/rest/donder/get-score?id={id}`
+- donder score sync
 - Local JSON file upload
 
 
@@ -140,3 +140,9 @@ python -m http.server 8080
 
 - [ ] Many Color Pop songs have `song_id = -1`, unmatchable
 - [ ] Manual editing doesn't support `high_score` override (incomplete for `score` condition what-if)
+
+## Acknowledgements
+
+The following projects were referenced during development:
+- Don Note
+- [taiko-rating-analyzer](https://github.com/OurTaiko/taiko-rating-analyzer)

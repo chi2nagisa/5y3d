@@ -52,7 +52,7 @@
   - `[4]` 最大连击数
 
 **数据来源**：
-- donder 查分器 API：`https://hasura.llx.life/api/rest/donder/get-score?id={id}`
+- 支持从 donder 查分器同步成绩
 - 本地 JSON 文件上传
 
 
@@ -137,3 +137,8 @@ python -m http.server 8080
 - [ ] 外传模式详情面板在窄屏下可能横向滚动（extra 矩阵列数少，详情内容宽）
 - [ ] 颜色版大量曲目 `song_id = -1`，无法匹配成绩
 - [ ] 手动编辑未支持 `high_score` 修改（score 条件的手动假设分析不完整）
+
+## 致谢
+开发中参考了以下项目：
+- Don Note
+- [taiko-rating-analyzer](https://github.com/OurTaiko/taiko-rating-analyzer)
