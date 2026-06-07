@@ -20990,7 +20990,7 @@
             },
             {
               "order": 3,
-              "song_id": -1,
+              "song_id": 1433,
               "name": "Re:Play!!",
               "difficulty": 4,
               "stars": 8,
@@ -21150,7 +21150,7 @@
           "songs": [
             {
               "order": 1,
-              "song_id": -1,
+              "song_id": 1393,
               "name": "Ka.Ma.Se",
               "difficulty": 4,
               "stars": 8,
