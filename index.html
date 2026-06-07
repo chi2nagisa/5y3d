@@ -631,7 +631,7 @@
 
     async function loadData() {
       try {
-        const daniRes = await fetch('dani_datas/dani_data.json');
+        const daniRes = await fetch('dani_datas/dani_data.json', { cache: 'no-store' });
         if (!daniRes.ok) throw new Error('dani_data.json HTTP ' + daniRes.status);
         daniData = await daniRes.json();
       } catch (e) {
@@ -640,7 +640,7 @@
       }
 
       try {
-        const extraRes = await fetch('dani_datas/gaiden_data.json');
+        const extraRes = await fetch('dani_datas/gaiden_data.json', { cache: 'no-store' });
         if (!extraRes.ok) throw new Error('gaiden_data.json HTTP ' + extraRes.status);
         extraDanniData = await extraRes.json();
       } catch (e) {
