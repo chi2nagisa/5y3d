@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>太鼓之达人 段位道场理论成绩</title>
+  <title>五年段位三年模拟</title>
   <style>
     * { box-sizing: border-box; }
     body {
@@ -631,7 +631,7 @@
 
     async function loadData() {
       try {
-        const daniRes = await fetch('dani_datas/dani_data.json');
+        const daniRes = await fetch('dani_datas/dani_data.json', { cache: 'no-store' });
         if (!daniRes.ok) throw new Error('dani_data.json HTTP ' + daniRes.status);
         daniData = await daniRes.json();
       } catch (e) {
@@ -640,7 +640,7 @@
       }
 
       try {
-        const extraRes = await fetch('dani_datas/gaiden_data.json');
+        const extraRes = await fetch('dani_datas/gaiden_data.json', { cache: 'no-store' });
         if (!extraRes.ok) throw new Error('gaiden_data.json HTTP ' + extraRes.status);
         extraDanniData = await extraRes.json();
       } catch (e) {

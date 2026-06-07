@@ -553,7 +553,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -629,7 +629,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -705,7 +705,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -781,7 +781,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -857,7 +857,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -933,7 +933,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -1009,7 +1009,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -1085,7 +1085,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -1161,7 +1161,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -1237,7 +1237,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -1313,7 +1313,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -1389,7 +1389,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -1461,11 +1461,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -1537,11 +1537,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -1613,11 +1613,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -1689,11 +1689,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -1765,11 +1765,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -2384,7 +2384,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -2460,7 +2460,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -2536,7 +2536,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -2612,7 +2612,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -2688,7 +2688,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -2764,7 +2764,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -2840,7 +2840,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -2916,7 +2916,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -2992,7 +2992,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -3068,7 +3068,7 @@
               },
               "gold": {
                 "operator": ">=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -3144,7 +3144,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -3220,7 +3220,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -3292,11 +3292,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -3368,11 +3368,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -3444,11 +3444,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -3520,11 +3520,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -3596,11 +3596,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -4215,7 +4215,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -4291,7 +4291,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -4367,7 +4367,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -4443,7 +4443,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -4519,7 +4519,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -4595,7 +4595,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -4671,7 +4671,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -4743,11 +4743,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -4819,11 +4819,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -4895,11 +4895,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -4971,11 +4971,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -5047,11 +5047,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -5123,11 +5123,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -5199,11 +5199,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -5275,11 +5275,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -5351,11 +5351,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -5427,11 +5427,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -6046,7 +6046,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -6122,7 +6122,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -6198,7 +6198,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -6274,7 +6274,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -6350,7 +6350,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -6426,7 +6426,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -6502,7 +6502,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -6578,7 +6578,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -6650,11 +6650,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -6726,11 +6726,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -6802,11 +6802,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -6878,11 +6878,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -6954,11 +6954,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -7030,11 +7030,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -7106,11 +7106,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -7182,11 +7182,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -7258,11 +7258,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -7562,7 +7562,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -7638,7 +7638,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -7714,7 +7714,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -7823,7 +7823,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -7932,7 +7932,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -8041,7 +8041,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -8150,7 +8150,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -8255,11 +8255,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -8364,11 +8364,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -8473,11 +8473,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -8582,11 +8582,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -8691,11 +8691,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -8820,11 +8820,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -8929,11 +8929,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -9038,11 +9038,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -9147,11 +9147,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -9484,7 +9484,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -9560,7 +9560,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -9636,7 +9636,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -9745,7 +9745,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -9854,7 +9854,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -9963,7 +9963,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -10072,7 +10072,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -10177,11 +10177,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -10286,11 +10286,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -10395,11 +10395,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -10504,11 +10504,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -10613,11 +10613,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -10742,11 +10742,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -10851,11 +10851,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -10960,11 +10960,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -11069,11 +11069,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -11406,7 +11406,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -11482,7 +11482,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -11558,7 +11558,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -11667,7 +11667,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -11776,7 +11776,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -11885,7 +11885,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -11994,7 +11994,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -12099,11 +12099,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -12208,11 +12208,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -12317,11 +12317,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -12426,11 +12426,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               }
             },
             {
@@ -12535,11 +12535,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -12664,11 +12664,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -12773,11 +12773,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -12882,11 +12882,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -12991,11 +12991,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 100
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -13328,7 +13328,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -13404,7 +13404,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -13480,7 +13480,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -13569,7 +13569,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -13658,7 +13658,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -13747,7 +13747,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -13836,7 +13836,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -13921,11 +13921,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -14030,11 +14030,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -14139,11 +14139,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -14248,11 +14248,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -14357,11 +14357,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -14486,11 +14486,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -14595,11 +14595,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -14704,11 +14704,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -14813,11 +14813,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -15150,7 +15150,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -15226,7 +15226,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -15302,7 +15302,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -15391,7 +15391,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -15480,7 +15480,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -15569,7 +15569,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -15658,7 +15658,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -15743,11 +15743,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -15852,11 +15852,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -15961,11 +15961,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -16070,11 +16070,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -16179,11 +16179,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -16288,11 +16288,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -16397,11 +16397,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -16506,11 +16506,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -16615,11 +16615,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -16952,7 +16952,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -17028,7 +17028,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -17104,7 +17104,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -17193,7 +17193,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -17282,7 +17282,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -17371,7 +17371,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -17460,7 +17460,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -17545,11 +17545,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -17654,11 +17654,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -17763,11 +17763,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -17872,11 +17872,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -17981,11 +17981,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -18110,11 +18110,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -18219,11 +18219,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -18328,11 +18328,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -18437,11 +18437,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -18774,7 +18774,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -18850,7 +18850,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -18926,7 +18926,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -19015,7 +19015,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -19104,7 +19104,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -19193,7 +19193,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -19282,7 +19282,7 @@
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -19367,11 +19367,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -19476,11 +19476,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -19585,11 +19585,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -19694,11 +19694,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -19803,11 +19803,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -19932,11 +19932,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -20041,11 +20041,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -20150,11 +20150,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -20259,11 +20259,11 @@
               "scope": "shared",
               "red": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               },
               "gold": {
                 "operator": "=",
-                "value": 1.0
+                "value": 1
               }
             },
             {
@@ -20353,6 +20353,1392 @@
               "stars": 10,
               "notes": 1438,
               "name_zh": "vs.VIGVANGS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nijiiro_2026",
+      "name": "ニジイロ2026",
+      "name_zh": "虹2026",
+      "start_date": "2026-06-06",
+      "end_date": null,
+      "danis": [
+        {
+          "id": "kyu_5",
+          "name": "五級",
+          "sort_order": 6,
+          "total_notes": 540,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.9
+              },
+              "gold": {
+                "operator": ">=",
+                "value": null
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 678
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 701
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1409,
+              "name": "愛♡スクリ～ム！",
+              "difficulty": 2,
+              "stars": 3,
+              "notes": 159,
+              "name_zh": "爱♡SCREAM!"
+            },
+            {
+              "order": 2,
+              "song_id": 1440,
+              "name": "Daddy's Style -今夜はダディダディ-",
+              "difficulty": 2,
+              "stars": 4,
+              "notes": 226,
+              "name_zh": null
+            },
+            {
+              "order": 3,
+              "song_id": 1443,
+              "name": "カーマイン",
+              "difficulty": 2,
+              "stars": 4,
+              "notes": 155,
+              "name_zh": null
+            }
+          ]
+        },
+        {
+          "id": "kyu_4",
+          "name": "四級",
+          "sort_order": 7,
+          "total_notes": 865,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.92
+              },
+              "gold": {
+                "operator": ">=",
+                "value": null
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 843
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 871
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 99
+              },
+              "gold": {
+                "operator": "<",
+                "value": null
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 413,
+              "name": "Bad Apple!! feat.nomico",
+              "difficulty": 2,
+              "stars": 5,
+              "notes": 261,
+              "name_zh": "Bad Apple!! feat.nomico"
+            },
+            {
+              "order": 2,
+              "song_id": 1386,
+              "name": "NEW KAWAII",
+              "difficulty": 2,
+              "stars": 5,
+              "notes": 198,
+              "name_zh": "NEW KAWAII"
+            },
+            {
+              "order": 3,
+              "song_id": 1401,
+              "name": "テトリス",
+              "difficulty": 2,
+              "stars": 5,
+              "notes": 406,
+              "name_zh": null
+            }
+          ]
+        },
+        {
+          "id": "kyu_3",
+          "name": "三級",
+          "sort_order": 8,
+          "total_notes": 824,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.93
+              },
+              "gold": {
+                "operator": ">=",
+                "value": null
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 934
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 964
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 78
+              },
+              "gold": {
+                "operator": "<",
+                "value": null
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1408,
+              "name": "倍倍FIGHT!",
+              "difficulty": 3,
+              "stars": 5,
+              "notes": 339,
+              "name_zh": "倍倍FIGHT!"
+            },
+            {
+              "order": 2,
+              "song_id": 1114,
+              "name": "シャイニングスター",
+              "difficulty": 3,
+              "stars": 5,
+              "notes": 228,
+              "name_zh": "Shining Star"
+            },
+            {
+              "order": 3,
+              "song_id": 1441,
+              "name": "IRIS OUT",
+              "difficulty": 3,
+              "stars": 5,
+              "notes": 257,
+              "name_zh": null
+            }
+          ]
+        },
+        {
+          "id": "kyu_2",
+          "name": "二級",
+          "sort_order": 9,
+          "total_notes": 1230,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.94
+              },
+              "gold": {
+                "operator": ">=",
+                "value": null
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1368
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1412
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 86
+              },
+              "gold": {
+                "operator": "<",
+                "value": null
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1192,
+              "name": "トウキョウ・シャンディ・ランデヴ",
+              "difficulty": 3,
+              "stars": 5,
+              "notes": 303,
+              "name_zh": "Tokyo Shandy Rendezvous"
+            },
+            {
+              "order": 2,
+              "song_id": 880,
+              "name": "夢と希望",
+              "difficulty": 3,
+              "stars": 6,
+              "notes": 438,
+              "name_zh": "夢と希望"
+            },
+            {
+              "order": 3,
+              "song_id": 354,
+              "name": "さいたま2000",
+              "difficulty": 3,
+              "stars": 7,
+              "notes": 489,
+              "name_zh": "埼玉2000"
+            }
+          ]
+        },
+        {
+          "id": "kyu_1",
+          "name": "一級",
+          "sort_order": 10,
+          "total_notes": 1141,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.95
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "hits",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1381
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1424
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 51
+              },
+              "gold": {
+                "operator": "<",
+                "value": null
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1446,
+              "name": "でぃんぴーでぃんぱー！",
+              "difficulty": 3,
+              "stars": 6,
+              "notes": 305,
+              "name_zh": null
+            },
+            {
+              "order": 2,
+              "song_id": 310,
+              "name": "脳漿炸裂ガール",
+              "difficulty": 3,
+              "stars": 6,
+              "notes": 339,
+              "name_zh": "脑浆炸裂GIRL"
+            },
+            {
+              "order": 3,
+              "song_id": 538,
+              "name": "最終鬼畜妹フランドール・S",
+              "difficulty": 3,
+              "stars": 7,
+              "notes": 497,
+              "name_zh": "最终鬼畜妹Frandre・S"
+            }
+          ]
+        },
+        {
+          "id": "dan_1",
+          "name": "初段",
+          "sort_order": 11,
+          "total_notes": 1189,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.97
+              },
+              "gold": {
+                "operator": ">=",
+                "value": null
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 814
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 862
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 36
+              },
+              "gold": {
+                "operator": "<",
+                "value": null
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 141
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 158
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 303,
+              "name": "夏祭り",
+              "difficulty": 4,
+              "stars": 6,
+              "notes": 488,
+              "name_zh": "Natsumatsuri"
+            },
+            {
+              "order": 2,
+              "song_id": 1303,
+              "name": "ハッピーシンセサイザ",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 331,
+              "name_zh": "HAPPY SYNTHESIZER"
+            },
+            {
+              "order": 3,
+              "song_id": 1415,
+              "name": "怪獣",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 370,
+              "name_zh": null
+            }
+          ]
+        },
+        {
+          "id": "dan_2",
+          "name": "二段",
+          "sort_order": 12,
+          "total_notes": 1452,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.97
+              },
+              "gold": {
+                "operator": ">=",
+                "value": null
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1036
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1091
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 35
+              },
+              "gold": {
+                "operator": "<",
+                "value": null
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 189
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 210
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1344,
+              "name": "メズマライザー",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 505,
+              "name_zh": "Mesmerizer"
+            },
+            {
+              "order": 2,
+              "song_id": 792,
+              "name": "only my railgun",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 429,
+              "name_zh": "only my railgun"
+            },
+            {
+              "order": 3,
+              "song_id": 84,
+              "name": "カルメン 組曲一番終曲",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 518,
+              "name_zh": "卡门第一组曲 斗牛士之歌"
+            }
+          ]
+        },
+        {
+          "id": "dan_3",
+          "name": "三段",
+          "sort_order": 13,
+          "total_notes": 1753,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.97
+              },
+              "gold": {
+                "operator": ">=",
+                "value": null
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1303
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1366
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 34
+              },
+              "gold": {
+                "operator": "<",
+                "value": 17
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 303
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 340
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1031,
+              "name": "Hello, Worldooon!!",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 494,
+              "name_zh": "Hello, Worldooon!!"
+            },
+            {
+              "order": 2,
+              "song_id": 74,
+              "name": "白猫きゃらめる夢幻のわたあめ",
+              "difficulty": 4,
+              "stars": 7,
+              "notes": 634,
+              "name_zh": "SHIRONEKO CARAMEL MUGEN NO WATAAME"
+            },
+            {
+              "order": 3,
+              "song_id": 1433,
+              "name": "Re:Play!!",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 625,
+              "name_zh": "Re:Play!!"
+            }
+          ]
+        },
+        {
+          "id": "dan_4",
+          "name": "四段",
+          "sort_order": 14,
+          "total_notes": 2135,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.98
+              },
+              "gold": {
+                "operator": ">=",
+                "value": null
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1653
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1724
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 33
+              },
+              "gold": {
+                "operator": "<",
+                "value": null
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 90
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 101
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 433,
+              "name": "エンジェル ドリーム",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 765,
+              "name_zh": "エンジェル ドリーム"
+            },
+            {
+              "order": 2,
+              "song_id": 458,
+              "name": "リスドンヴァルナの黄昏",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 605,
+              "name_zh": "利敦瓦纳的黄昏"
+            },
+            {
+              "order": 3,
+              "song_id": 403,
+              "name": "らんぶる乱舞",
+              "difficulty": 5,
+              "stars": 8,
+              "notes": 765,
+              "name_zh": "RUMBLE乱舞"
+            }
+          ]
+        },
+        {
+          "id": "dan_5",
+          "name": "五段",
+          "sort_order": 15,
+          "total_notes": 1816,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.98
+              },
+              "gold": {
+                "operator": ">=",
+                "value": null
+              }
+            },
+            {
+              "order": 2,
+              "type": "good",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1465
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1519
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 22
+              },
+              "gold": {
+                "operator": "<",
+                "value": null
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 284
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 318
+              }
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1393,
+              "name": "Ka.Ma.Se",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 527,
+              "name_zh": null
+            },
+            {
+              "order": 2,
+              "song_id": 191,
+              "name": "ボクハシンセ",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 612,
+              "name_zh": "我是合成器"
+            },
+            {
+              "order": 3,
+              "song_id": 1380,
+              "name": "Oshama Scramble!",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 677,
+              "name_zh": "Oshama Scramble!"
+            }
+          ]
+        },
+        {
+          "id": "dan_6",
+          "name": "六段",
+          "sort_order": 16,
+          "total_notes": 2175,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 346
+              },
+              "gold": {
+                "operator": "<",
+                "value": null
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 20
+              },
+              "gold": {
+                "operator": "<",
+                "value": null
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 0
+                },
+                {
+                  "operator": ">=",
+                  "value": 31
+                },
+                {
+                  "operator": ">=",
+                  "value": 88
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 0
+                },
+                {
+                  "operator": ">=",
+                  "value": 37
+                },
+                {
+                  "operator": ">=",
+                  "value": 106
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 215,
+              "name": "時空庁捜査2課",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 773,
+              "name_zh": "时空厅搜查2课"
+            },
+            {
+              "order": 2,
+              "song_id": 257,
+              "name": "MATSURI D／A",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 574,
+              "name_zh": "MATSURI D/A"
+            },
+            {
+              "order": 3,
+              "song_id": 1387,
+              "name": "バブリー革命 ～ばんばんバブル～",
+              "difficulty": 5,
+              "stars": 9,
+              "notes": 828,
+              "name_zh": "Bubbly Revolution -Bang Bang Bubble-"
+            }
+          ]
+        },
+        {
+          "id": "dan_7",
+          "name": "七段",
+          "sort_order": 17,
+          "total_notes": 2291,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 285
+              },
+              "gold": {
+                "operator": "<",
+                "value": null
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 16
+              },
+              "gold": {
+                "operator": "<",
+                "value": 8
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 86
+                },
+                {
+                  "operator": ">=",
+                  "value": 89
+                },
+                {
+                  "operator": ">=",
+                  "value": 10
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 96
+                },
+                {
+                  "operator": ">=",
+                  "value": 101
+                },
+                {
+                  "operator": ">=",
+                  "value": 11
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 536,
+              "name": "ロストワンの号哭",
+              "difficulty": 4,
+              "stars": 8,
+              "notes": 799,
+              "name_zh": "Lost one的恸哭"
+            },
+            {
+              "order": 2,
+              "song_id": 580,
+              "name": "スポーツダイジェスドン",
+              "difficulty": 5,
+              "stars": 9,
+              "notes": 733,
+              "name_zh": "Sports DigesDON"
+            },
+            {
+              "order": 3,
+              "song_id": 1207,
+              "name": "AtoZ,I leave toZ",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 759,
+              "name_zh": "AtoZ,I leave toZ"
+            }
+          ]
+        },
+        {
+          "id": "dan_8",
+          "name": "八段",
+          "sort_order": 18,
+          "total_notes": 2208,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 0.99
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 194
+              },
+              "gold": {
+                "operator": "<",
+                "value": null
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 11
+              },
+              "gold": {
+                "operator": "<",
+                "value": 5
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 133
+                },
+                {
+                  "operator": ">=",
+                  "value": 212
+                },
+                {
+                  "operator": ">=",
+                  "value": 0
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 159
+                },
+                {
+                  "operator": ">=",
+                  "value": 247
+                },
+                {
+                  "operator": ">=",
+                  "value": 0
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 406,
+              "name": "ツンデレCafeへようこそ☆",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 555,
+              "name_zh": "TSUN-DERE Café E YOKOSO☆"
+            },
+            {
+              "order": 2,
+              "song_id": 1381,
+              "name": "ミンナノカキゴオリ",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 765,
+              "name_zh": "MINNA NO KAKIGOORI"
+            },
+            {
+              "order": 3,
+              "song_id": 1438,
+              "name": "SORA-VIII ネビュラトレイル",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 888,
+              "name_zh": null
+            }
+          ]
+        },
+        {
+          "id": "dan_9",
+          "name": "九段",
+          "sort_order": 19,
+          "total_notes": 2622,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 120
+              },
+              "gold": {
+                "operator": "<",
+                "value": 80
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 10
+              },
+              "gold": {
+                "operator": "<",
+                "value": 4
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 23
+                },
+                {
+                  "operator": ">=",
+                  "value": 162
+                },
+                {
+                  "operator": ">=",
+                  "value": 0
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 24
+                },
+                {
+                  "operator": ">=",
+                  "value": 191
+                },
+                {
+                  "operator": ">=",
+                  "value": 0
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 16,
+              "name": "闇の魔法少女",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 1158,
+              "name_zh": "暗黑魔法少女"
+            },
+            {
+              "order": 2,
+              "song_id": 1305,
+              "name": "雲の彼方の大地の風",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 643,
+              "name_zh": "白云彼方的大地之风"
+            },
+            {
+              "order": 3,
+              "song_id": 404,
+              "name": "タベルナ2000",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 821,
+              "name_zh": "禁食2000"
+            }
+          ]
+        },
+        {
+          "id": "dan_10",
+          "name": "十段",
+          "sort_order": 20,
+          "total_notes": 2526,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": ">=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": ">=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": "<",
+                  "value": 18
+                },
+                {
+                  "operator": "<",
+                  "value": 25
+                },
+                {
+                  "operator": "<",
+                  "value": 30
+                }
+              ],
+              "gold": [
+                {
+                  "operator": "<",
+                  "value": 13
+                },
+                {
+                  "operator": "<",
+                  "value": 20
+                },
+                {
+                  "operator": "<",
+                  "value": 23
+                }
+              ]
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 8
+              },
+              "gold": {
+                "operator": "<",
+                "value": 4
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 7
+                },
+                {
+                  "operator": ">=",
+                  "value": 46
+                },
+                {
+                  "operator": ">=",
+                  "value": 80
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 8
+                },
+                {
+                  "operator": ">=",
+                  "value": 51
+                },
+                {
+                  "operator": ">=",
+                  "value": 93
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 738,
+              "name": "メヌエット",
+              "difficulty": 4,
+              "stars": 9,
+              "notes": 529,
+              "name_zh": "小步舞曲"
+            },
+            {
+              "order": 2,
+              "song_id": -1,
+              "name": "鈍響ライクリフド",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 1059,
+              "name_zh": "鈍響ライクリフド"
+            },
+            {
+              "order": 3,
+              "song_id": -1,
+              "name": "活声ライクリフド",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 938,
+              "name_zh": "鈍響ライクリフド"
             }
           ]
         }
