@@ -14915,7 +14915,7 @@
     {
       "id": "nijiiro_2024",
       "name": "ニジイロ2024",
-      "name_zh": "虹2024/2025秋",
+      "name_zh": "虹2024/2025春",
       "start_date": "2024-06-01",
       "end_date": "2025-05-28",
       "danis": [
@@ -20358,12 +20358,13 @@
         }
       ]
     },
-    {
+   {
       "id": "nijiiro_2026",
       "name": "ニジイロ2026",
       "name_zh": "虹2026",
       "start_date": "2026-06-06",
       "end_date": null,
+      "source_url": "https://wikiwiki.jp/taiko-fumen/%E6%AE%B5%E4%BD%8D%E9%81%93%E5%A0%B4",
       "danis": [
         {
           "id": "kyu_5",
@@ -20381,7 +20382,7 @@
               },
               "gold": {
                 "operator": ">=",
-                "value": null
+                "value": 0.95
               }
             },
             {
@@ -20444,7 +20445,7 @@
               },
               "gold": {
                 "operator": ">=",
-                "value": null
+                "value": 0.95
               }
             },
             {
@@ -20470,7 +20471,7 @@
               },
               "gold": {
                 "operator": "<",
-                "value": null
+                "value": 49
               }
             }
           ],
@@ -20500,7 +20501,7 @@
               "difficulty": 2,
               "stars": 5,
               "notes": 406,
-              "name_zh": null
+              "name_zh": "Tetoris"
             }
           ]
         },
@@ -20520,7 +20521,7 @@
               },
               "gold": {
                 "operator": ">=",
-                "value": null
+                "value": 0.97
               }
             },
             {
@@ -20546,7 +20547,7 @@
               },
               "gold": {
                 "operator": "<",
-                "value": null
+                "value": 39
               }
             }
           ],
@@ -20596,7 +20597,7 @@
               },
               "gold": {
                 "operator": ">=",
-                "value": null
+                "value": 0.97
               }
             },
             {
@@ -20622,7 +20623,7 @@
               },
               "gold": {
                 "operator": "<",
-                "value": null
+                "value": 43
               }
             }
           ],
@@ -20671,8 +20672,8 @@
                 "value": 0.95
               },
               "gold": {
-                "operator": ">=",
-                "value": 1.0
+                "operator": "=",
+                "value": 100
               }
             },
             {
@@ -20698,7 +20699,7 @@
               },
               "gold": {
                 "operator": "<",
-                "value": null
+                "value": 25
               }
             }
           ],
@@ -20747,8 +20748,8 @@
                 "value": 0.97
               },
               "gold": {
-                "operator": ">=",
-                "value": null
+                "operator": "=",
+                "value": 1.0
               }
             },
             {
@@ -20774,7 +20775,7 @@
               },
               "gold": {
                 "operator": "<",
-                "value": null
+                "value": 18
               }
             },
             {
@@ -20817,7 +20818,7 @@
               "difficulty": 4,
               "stars": 7,
               "notes": 370,
-              "name_zh": null
+              "name_zh": "怪兽"
             }
           ]
         },
@@ -20836,8 +20837,8 @@
                 "value": 0.97
               },
               "gold": {
-                "operator": ">=",
-                "value": null
+                "operator": "=",
+                "value": 1.0
               }
             },
             {
@@ -20863,7 +20864,7 @@
               },
               "gold": {
                 "operator": "<",
-                "value": null
+                "value": 17
               }
             },
             {
@@ -20925,8 +20926,8 @@
                 "value": 0.97
               },
               "gold": {
-                "operator": ">=",
-                "value": null
+                "operator": "=",
+                "value": 1.0
               }
             },
             {
@@ -21014,8 +21015,8 @@
                 "value": 0.98
               },
               "gold": {
-                "operator": ">=",
-                "value": null
+                "operator": "=",
+                "value": 1.0
               }
             },
             {
@@ -21041,7 +21042,7 @@
               },
               "gold": {
                 "operator": "<",
-                "value": null
+                "value": 16
               }
             },
             {
@@ -21103,8 +21104,8 @@
                 "value": 0.98
               },
               "gold": {
-                "operator": ">=",
-                "value": null
+                "operator": "=",
+                "value": 1.0
               }
             },
             {
@@ -21130,7 +21131,7 @@
               },
               "gold": {
                 "operator": "<",
-                "value": null
+                "value": 11
               }
             },
             {
@@ -21155,7 +21156,7 @@
               "difficulty": 4,
               "stars": 8,
               "notes": 527,
-              "name_zh": null
+              "name_zh": "Ka.Ma.Se"
             },
             {
               "order": 2,
@@ -21192,7 +21193,7 @@
                 "value": 0.99
               },
               "gold": {
-                "operator": ">=",
+                "operator": "=",
                 "value": 1.0
               }
             },
@@ -21206,7 +21207,7 @@
               },
               "gold": {
                 "operator": "<",
-                "value": null
+                "value": 289
               }
             },
             {
@@ -21219,7 +21220,7 @@
               },
               "gold": {
                 "operator": "<",
-                "value": null
+                "value": 10
               }
             },
             {
@@ -21228,7 +21229,7 @@
               "scope": "per_song",
               "red": [
                 {
-                  "operator": ">=",
+                  "operator": "=",
                   "value": 0
                 },
                 {
@@ -21242,7 +21243,7 @@
               ],
               "gold": [
                 {
-                  "operator": ">=",
+                  "operator": "=",
                   "value": 0
                 },
                 {
@@ -21301,7 +21302,7 @@
                 "value": 0.99
               },
               "gold": {
-                "operator": ">=",
+                "operator": "=",
                 "value": 1.0
               }
             },
@@ -21315,7 +21316,7 @@
               },
               "gold": {
                 "operator": "<",
-                "value": null
+                "value": 232
               }
             },
             {
@@ -21410,7 +21411,7 @@
                 "value": 0.99
               },
               "gold": {
-                "operator": ">=",
+                "operator": "=",
                 "value": 1.0
               }
             },
@@ -21424,7 +21425,7 @@
               },
               "gold": {
                 "operator": "<",
-                "value": null
+                "value": 151
               }
             },
             {
@@ -21454,7 +21455,7 @@
                   "value": 212
                 },
                 {
-                  "operator": ">=",
+                  "operator": "=",
                   "value": 0
                 }
               ],
@@ -21468,7 +21469,7 @@
                   "value": 247
                 },
                 {
-                  "operator": ">=",
+                  "operator": "=",
                   "value": 0
                 }
               ]
@@ -21515,11 +21516,11 @@
               "type": "gauge",
               "scope": "shared",
               "red": {
-                "operator": ">=",
+                "operator": "=",
                 "value": 1.0
               },
               "gold": {
-                "operator": ">=",
+                "operator": "=",
                 "value": 1.0
               }
             },
@@ -21563,7 +21564,7 @@
                   "value": 162
                 },
                 {
-                  "operator": ">=",
+                  "operator": "=",
                   "value": 0
                 }
               ],
@@ -21577,7 +21578,7 @@
                   "value": 191
                 },
                 {
-                  "operator": ">=",
+                  "operator": "=",
                   "value": 0
                 }
               ]
@@ -21624,11 +21625,11 @@
               "type": "gauge",
               "scope": "shared",
               "red": {
-                "operator": ">=",
+                "operator": "=",
                 "value": 1.0
               },
               "gold": {
-                "operator": ">=",
+                "operator": "=",
                 "value": 1.0
               }
             },
@@ -21729,7 +21730,7 @@
               "difficulty": 4,
               "stars": 10,
               "notes": 1059,
-              "name_zh": "鈍響ライクリフド"
+              "name_zh": null
             },
             {
               "order": 3,
@@ -21738,7 +21739,443 @@
               "difficulty": 4,
               "stars": 10,
               "notes": 938,
-              "name_zh": "鈍響ライクリフド"
+              "name_zh": null
+            }
+          ]
+        },
+        {
+          "id": "kuroto",
+          "name": "玄人",
+          "sort_order": 21,
+          "total_notes": 2814,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": "=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 50
+              },
+              "gold": {
+                "operator": "<",
+                "value": 35
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 6
+              },
+              "gold": {
+                "operator": "<",
+                "value": 3
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 96
+                },
+                {
+                  "operator": ">=",
+                  "value": 11
+                },
+                {
+                  "operator": ">=",
+                  "value": 110
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 107
+                },
+                {
+                  "operator": ">=",
+                  "value": 12
+                },
+                {
+                  "operator": ">=",
+                  "value": 121
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1324,
+              "name": "イオシス秋の爆食祭2024",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 811,
+              "name_zh": "IOSYS Autumn Voracious Festival 2024"
+            },
+            {
+              "order": 2,
+              "song_id": 121,
+              "name": "Doom Noiz",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 961,
+              "name_zh": "Doom Noiz"
+            },
+            {
+              "order": 3,
+              "song_id": -1,
+              "name": "resume:story",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1042,
+              "name_zh": null
+            }
+          ]
+        },
+        {
+          "id": "meijin",
+          "name": "名人",
+          "sort_order": 22,
+          "total_notes": 3188,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": "=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 30
+              },
+              "gold": {
+                "operator": "<",
+                "value": 20
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 5
+              },
+              "gold": {
+                "operator": "<",
+                "value": 3
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 32
+                },
+                {
+                  "operator": ">=",
+                  "value": 141
+                },
+                {
+                  "operator": ">=",
+                  "value": 92
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 41
+                },
+                {
+                  "operator": ">=",
+                  "value": 172
+                },
+                {
+                  "operator": ">=",
+                  "value": 102
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 493,
+              "name": "ウルトラマンX",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1035,
+              "name_zh": "ウルトラマンX"
+            },
+            {
+              "order": 2,
+              "song_id": 700,
+              "name": "Taiko Drum Monster",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 850,
+              "name_zh": "Taiko Drum Monster"
+            },
+            {
+              "order": 3,
+              "song_id": -1,
+              "name": "HYPERNOVA",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1303,
+              "name_zh": null
+            }
+          ]
+        },
+        {
+          "id": "choujin",
+          "name": "超人",
+          "sort_order": 23,
+          "total_notes": 2963,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": "=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 15
+              },
+              "gold": {
+                "operator": "<",
+                "value": 6
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 4
+              },
+              "gold": {
+                "operator": "<",
+                "value": 2
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 49
+                },
+                {
+                  "operator": ">=",
+                  "value": 35
+                },
+                {
+                  "operator": ">=",
+                  "value": 34
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 50
+                },
+                {
+                  "operator": ">=",
+                  "value": 44
+                },
+                {
+                  "operator": ">=",
+                  "value": 42
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": 1309,
+              "name": "ココドコ？多分ドッカ島！",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 939,
+              "name_zh": "KOKODOKO? 或许是DOKKA岛呢!"
+            },
+            {
+              "order": 2,
+              "song_id": 1394,
+              "name": "雲間を游ぐ",
+              "difficulty": 4,
+              "stars": 10,
+              "notes": 678,
+              "name_zh": "畅游云间"
+            },
+            {
+              "order": 3,
+              "song_id": -1,
+              "name": "Vrykolakas",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1346,
+              "name_zh": null
+            }
+          ]
+        },
+        {
+          "id": "tatsujin",
+          "name": "達人",
+          "sort_order": 24,
+          "total_notes": 3840,
+          "clear_conditions": [
+            {
+              "order": 1,
+              "type": "gauge",
+              "scope": "shared",
+              "red": {
+                "operator": "=",
+                "value": 1.0
+              },
+              "gold": {
+                "operator": "=",
+                "value": 1.0
+              }
+            },
+            {
+              "order": 2,
+              "type": "ok",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 8
+              },
+              "gold": {
+                "operator": "<",
+                "value": 1
+              }
+            },
+            {
+              "order": 3,
+              "type": "bad",
+              "scope": "shared",
+              "red": {
+                "operator": "<",
+                "value": 3
+              },
+              "gold": {
+                "operator": "<",
+                "value": 1
+              }
+            },
+            {
+              "order": 4,
+              "type": "roll",
+              "scope": "per_song",
+              "red": [
+                {
+                  "operator": ">=",
+                  "value": 84
+                },
+                {
+                  "operator": ">=",
+                  "value": 38
+                },
+                {
+                  "operator": ">=",
+                  "value": 49
+                }
+              ],
+              "gold": [
+                {
+                  "operator": ">=",
+                  "value": 109
+                },
+                {
+                  "operator": ">=",
+                  "value": 49
+                },
+                {
+                  "operator": ">=",
+                  "value": 59
+                }
+              ]
+            }
+          ],
+          "songs": [
+            {
+              "order": 1,
+              "song_id": -1,
+              "name": "Nivalis*Anima",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1326,
+              "name_zh": null
+            },
+            {
+              "order": 2,
+              "song_id": -1,
+              "name": "魔宵月",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1013,
+              "name_zh": null
+            },
+            {
+              "order": 3,
+              "song_id": -1,
+              "name": "銀の黎明か、黒の晶華か。",
+              "difficulty": 5,
+              "stars": 10,
+              "notes": 1501,
+              "name_zh": null
             }
           ]
         }
